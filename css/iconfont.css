@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+
+/*
+ * 自我字体库链接
+ */
+@font-face {
+  font-family: 'qkyicon_12';  /* project id 202503 */
+  src: url('../iconfont/12/iconfont.eot'); /* IE9*/
+  src: url('../iconfont/12/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../iconfont/12/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../iconfont/12/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../iconfont/12/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'qkyicon_14';  /* project id 202497 */
+  src: url('../iconfont/14/iconfont.eot'); /* IE9*/
+  src: url('../iconfont/14/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../iconfont/14/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../iconfont/14/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../iconfont/14/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+
+}
+
+@font-face {
+  font-family: 'qkyicon_20';  /* project id 202495 */
+  src: url('../iconfont/20/iconfont.eot'); /* IE9*/
+  src: url('../iconfont/20/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../iconfont/20/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../iconfont/20/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../iconfont/20/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'qkyicon_22';  /* project id 202493 */
+  src: url('../iconfont/22/iconfont.eot'); /* IE9*/
+  src: url('../iconfont/22/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../iconfont/22/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../iconfont/22/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../iconfont/22/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'qkyicon_100';  /* project id 202483 */
+  src: url('../iconfont/100/iconfont.eot'); /* IE9*/
+  src: url('../iconfont/100/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../iconfont/100/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../iconfont/100/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../iconfont/100/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+
+
+.qkyicon_12 {
+  font-family:"qkyicon_12" !important;
+  font-size:12px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+ /*-webkit-text-stroke-width: 0.2px;*/
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.qkyicon_14 {
+  font-family:"qkyicon_14" !important;
+  font-size:14px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+ /*-webkit-text-stroke-width: 0.2px;*/
+  -moz-osx-font-smoothing: grayscale;
+}
+.qkyicon_20{
+  font-family:"qkyicon_20" !important;
+  font-size:20px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+ /*-webkit-text-stroke-width: 0.2px;*/
+  -moz-osx-font-smoothing: grayscale;
+}
+.qkyicon_22 {
+  font-family:"qkyicon_22" !important;
+  font-size:22px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+ /*-webkit-text-stroke-width: 0.2px;*/
+  -moz-osx-font-smoothing: grayscale;
+}
+.qkyicon_100 {
+  font-family:"qkyicon_100" !important;
+  font-size:100px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+ /*-webkit-text-stroke-width: 0.2px;*/
+  -moz-osx-font-smoothing: grayscale;
+}
+ .color_icon {
+	/* 通过设置 font-size 来改变图标大小 */
+	width: 1em; height: 1em;
+	/* 图标和文字相邻时，垂直对齐 */
+	vertical-align: -0.15em;
+	/* 通过设置 color 来改变 SVG 的颜色/fill */
+	fill: currentColor;
+	/* path 和 stroke 溢出 viewBox 部分在 IE 下会显示
+	normalize.css 中也包含这行 */
+	overflow: hidden;
+	font-size:40px;
+}
+
+
+
