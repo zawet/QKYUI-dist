@@ -42,9 +42,9 @@ ul.error_tips{ padding:0; margin:0;list-style:none;}/*错误信息列表*/
 ul.error_tips li{ padding:4px 0 ; margin:0;}
 
 .cadr_hbg{ background:#f4f4f4;}
-
 .a_tdn{text-decoration:none;}
 .a_tdn:hover{ text-decoration:none;}
+
 
 /*****主导航条改装*****/
 .nav_box{ width:100%;}
@@ -141,6 +141,9 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 /*按钮改装*/
 .btn.qkybtn{ padding:4px 15px; min-width:80px; height:30px; border-radius:3px; }
 .auto{ min-width:auto;}
+.btn-mian{ color:#fff; border-color:#2baf2b; background-color:#2baf2b;}
+.btn-mian:hover,.btn-mian:focus{ background-color:#229f22; border-color:#229f22; color:#fff;}
+
 
 
 /*单选改装*/
