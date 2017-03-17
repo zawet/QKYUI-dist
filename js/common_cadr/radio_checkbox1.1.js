@@ -6,18 +6,18 @@
 
 define(function(require) {
 	//单选按钮事件
-	$(".radio-inline").on("click",function(){
+	$(".radio-qky").on("click",function(){
 		if(!$(this).hasClass("disabled"))
 		$(this).toggleClass("select").siblings().removeClass("select");
 	});
 	//复选按钮事件
-	$(".checkbox-inline").on("click",function(){
+	$(".checkbox-qky").on("click",function(){
 		if(!$(this).hasClass("disabled"))
 		$(this).toggleClass("select");
 	})
 	
 	//复选父子链接选择
-	$(".checkbox-inline.parent").on("click",function(){
+	$(".checkbox-qky.parent").on("click",function(){
 		var key=$(this).attr("lj");
 		var keychild=$(".checkbox-inline.child[lj="+key+"]");
 		if(!keychild.hasClass("disabled")){

@@ -5,10 +5,12 @@ seajs.config({
     'bs': 'bootstrap/3.3.0/js/bootstrap.min',//引用bootstrap前端框架
     'nav': 'comjs/nav_add1.2',//引用整体头部
     'navicon': 'comjs/iconfont',//引用头部图标
-	
+	'jq':'jq/1.11.1/jquery',
 	/****插件***/
 	'cal_fp':'flatpickr/flatpickr',//日历插件fp
 	'ec':'echarts/3.0/echarts.common.min',//数据视图插件ec
+	'sw':'swiper/3.4.1/js/swiper.min',//3.4轮播插件
+	'sw2':'swiper/2.0/idangerous.swiper.min',//2.0轮播插件
   },
 
   // 路径配置
