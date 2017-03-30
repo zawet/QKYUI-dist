@@ -7,7 +7,7 @@ define({
 	navdata:{/*导航数据*/
 		"logosrc":"images/nav_logo/logo.png",
 		"pjname":"初始页面",
-		"navli":[["PC设计规范","href='index.html'"],["移动视觉规范","href='index_qkyui.html'"],["PC前端起步","href='index_start.html'"],["PC前端使用手册","href='index_api.html'"],["Q&A","href='index_qa.html'"]],
+		"navli":[["导航1","href='#'"],["导航2","href='#'"],["导航3","href='#'"]],
 		"navli_active":0,
 		"moreli":{
 			"校园办公":["xiaoyuanbangong",[["个人办公","href='#'"],["行政办公","href='#'"],["流程审批","href='#'"]]],

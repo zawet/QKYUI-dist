@@ -14,10 +14,24 @@ body{font-family: Microsoft YaHei,"Hiragino Sans GB W3", Helvetica, Arial, sans-
 .qkyff_fluid{ background:#fff; width:100%;}
 .navbar-fixed-top {border: 0;}
 .qkycadr{ background:#fff; border:1px solid #d8d8d8;}
-.container {width:100%;}
-@media (min-width: 768px){.container {width:100%;}}
-@media (min-width: 992px){.container {width: 970px;}}
-@media (min-width: 1200px){.container {width: 1080px;}}
+
+/*整体宽度档位提供*/
+.container-md,.container-l,.container-xl,.container-p90,.container-p80,.container-p60{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container,.container-md ,.container-l,.container-xl{width:100%;}
+.container-p90 {width:90%;}
+.container-p80 {width:80%;}
+.container-p60 {width:60%;}
+.container {max-width:1080px;}
+.container-md{max-width:1200px;}
+.container-l{max-width:1366px;}
+.container-xl{max-width:1440px;}
+
+
 .footer{ position: absolute; bottom:0; padding:15px 0; text-align:center; left:0; width:100%; background:#fff; color:#a5a5a5;z-index: 1001;}
 .footer.open{ display:block;}
 .footer.inverse{ background:#515151;}
