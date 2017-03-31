@@ -11,7 +11,7 @@
 .clear:after {clear: both;}
 .po_r{ position:relative;}
 .po_ab{ position:absolute; top:0; left:0;}
-.po_ad_r{ position:absolute; top:0; right:0}
+.po_ab_r{ position:absolute; top:0; right:0}
 .kuai{ display:block;}
 .kuai_line{ display:inline-block;}
 .box_b{ box-sizing:border-box;}/*块元素浮动算宽度时，忽略边框和内边距*/
@@ -27,16 +27,19 @@
 .t_c{ text-align:center !important;}
 .t_l{ text-align:left !important;}
 .t_r{ text-align:right !important;}
+.bor_nb{ border-bottom:none !important;}
+.bor_nt{ border-top:none !important;}
+.atd a:hover,.atd:hover{ text-decoration:inherit; cursor:pointer;}
+.wd100{ width:100%;}
 
-
-.co_a3{ color:#a3a3a3;}
-.co_93{ color:#939393;}
-.co_83{ color:#838383;}
-.co_73{ color:#737373;}
-.co_63{ color:#636363;}
-.co_53{ color:#535353;}
-.co_43{ color:#434343;}
-.co_33{ color:#333333;}
+.co_a3{ color:#a3a3a3!important;}
+.co_93{ color:#939393!important;}
+.co_83{ color:#838383!important;}
+.co_73{ color:#737373!important;}
+.co_63{ color:#636363!important;}
+.co_53{ color:#535353!important;}
+.co_43{ color:#434343!important;}
+.co_33{ color:#333333!important;}
 
 .fz_we{ font-weight:bold!important;}
 .fz_12{ font-size:12px!important;}
@@ -58,56 +61,56 @@
 .fz_100{ font-size:100px!important;}
 
 .mt0{ margin-top:0px!important;}
-.mt5{ margin-top:5px;}
-.mt8{ margin-top:8px;}
-.mt10{ margin-top:10px;}
-.mt15{ margin-top:15px;}
-.mt20{ margin-top:20px;}
+.mt5{ margin-top:5px!important;}
+.mt8{ margin-top:8px!important;}
+.mt10{ margin-top:10px!important;}
+.mt15{ margin-top:15px!important;}
+.mt20{ margin-top:20px!important;}
 .mb0{ margin-bottom:0px!important;}
-.mb5{ margin-bottom:5px;}
-.mb8{ margin-bottom:8px;}
-.mb10{ margin-bottom:10px;}
-.mb15{ margin-bottom:15px;}
-.mb20{ margin-bottom:20px;}
+.mb5{ margin-bottom:5px!important;}
+.mb8{ margin-bottom:8px!important;}
+.mb10{ margin-bottom:10px!important;}
+.mb15{ margin-bottom:15px!important;}
+.mb20{ margin-bottom:20px!important;}
 .ml0{ margin-left:0px!important;}
-.ml5{ margin-left:5px;}
-.ml8{ margin-left:8px;}
-.ml10{ margin-left:10px;}
-.ml15{ margin-left:15px;}
-.ml20{ margin-left:20px;}
+.ml5{ margin-left:5px!important;}
+.ml8{ margin-left:8px!important;}
+.ml10{ margin-left:10px!important;}
+.ml15{ margin-left:15px!important;}
+.ml20{ margin-left:20px!important;}
 .mr0{ margin-right:0px!important;}
-.mr5{ margin-right:5px;}
-.mr8{ margin-right:8px;}
-.mr10{ margin-right:10px;}
-.mr15{ margin-right:15px;}
-.mr20{ margin-right:20px;}
-.ma5{ margin:5px;}
-.ma10{ margin:10px;}
-.ma15{ margin:15px;}
-.ma20{ margin:20px;}
+.mr5{ margin-right:5px!important;}
+.mr8{ margin-right:8px!important;}
+.mr10{ margin-right:10px!important;}
+.mr15{ margin-right:15px!important;}
+.mr20{ margin-right:20px!important;}
+.ma5{ margin:5px!important;}
+.ma10{ margin:10px!important;}
+.ma15{ margin:15px!important;}
+.ma20{ margin:20px!important;}
 
 
 .pt0{ padding-top:0px!important;}
-.pt5{ padding-top:5px;}
-.pt10{ padding-top:10px;}
-.pt15{ padding-top:15px;}
-.pt20{ padding-top:20px;}
+.pt5{ padding-top:5px!important;}
+.pt10{ padding-top:10px!important;}
+.pt15{ padding-top:15px!important;}
+.pt20{ padding-top:20px!important;}
 .pb0{ padding-bottom:0px!important;}
-.pb5{ padding-bottom:5px;}
-.pb10{ padding-bottom:10px;}
-.pb15{ padding-bottom:15px;}
-.pb20{ padding-bottom:20px;}
+.pb5{ padding-bottom:5px!important;}
+.pb10{ padding-bottom:10px!important;}
+.pb15{ padding-bottom:15px!important;}
+.pb20{ padding-bottom:20px!important;}
 .pl0{ padding-left:0px!important;}
-.pl5{ padding-left:5px;}
-.pl10{ padding-left:10px;}
-.pl15{ padding-left:15px;}
-.pl20{ padding-left:20px;}
+.pl5{ padding-left:5px!important;}
+.pl10{ padding-left:10px!important;}
+.pl15{ padding-left:15px!important;}
+.pl20{ padding-left:20px!important;}
 .pr0{ padding-right:0px!important;}
-.pr5{ padding-right:5px;}
-.pr10{ padding-right:10px;}
-.pr15{ padding-right:15px;}
-.pr20{ padding-right:20px;}
-.pa5{ padding:5px;}
-.pa10{ padding:10px;}
-.pa15{ padding:15px;}
-.pa20{ padding:20px;}
+.pr5{ padding-right:5px!important;}
+.pr10{ padding-right:10px!important;}
+.pr15{ padding-right:15px!important;}
+.pr20{ padding-right:20px!important;}
+.pa5{ padding:5px!important;}
+.pa10{ padding:10px!important;}
+.pa15{ padding:15px!important;}
+.pa20{ padding:20px!important;}
