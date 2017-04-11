@@ -8,7 +8,7 @@ define(function(require,exports) {
 	var getpy=require("./getpy");//拼音获取引用
 	var opts=qkydata.navdata;
 	var haveicon=qkydata.haveicon //已经有的图标名记录数组;
-	var rach=require("../../js/common_cadr/radio_checkbox1.2");//拼音获取引用
+	var rach=require("../../js/common_cadr/radio_checkbox1.2");//获取单复选的暴露方法
 	
 	//暴露的执行函数
 	exports.newscenter_run=function(){

@@ -6,7 +6,9 @@ seajs.config({
     'nav': 'comjs/nav_add1.4',//引用整体头部
 	'app': 'comjs/appcenter',//引用应用中心的js模块
 	'news': 'comjs/newscenter',//引用消息中心的js模块
+	'aset':'comjs/account_settings',//引用账户设置的js模块
 	'jq':'jq/1.11.1/jquery',
+	'ci':'cropit-master/jquery.cropit',
 	/****插件***/
 	'cal_fp':'flatpickr/flatpickr',//日历插件fp
 	'ec':'echarts/3.0/echarts.common.min',//数据视图插件ec
