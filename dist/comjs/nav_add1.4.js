@@ -58,19 +58,40 @@ define(function(require) {
 								$("#nav_news_li_mould .nav_news_cont").html(newsdata[i].newscont);
 								$(".nav_news_libox").append($("#nav_news_li_mould").html());
 							}
+							var newspoph=$(".nav_news_popup").outerHeight();
+							if(newspoph>500)$(".nav_news_popup").css("height","500px");//超过500的高度自动变可以滚动
 						}
+						
+						$(document).on("click",":not('.nav_news_box')",function(){
+							 $(".nav_news_box .nav_news_popup").slideUp(50);
+						  })
+						  $(".nav_news_box").on("click",function(event){
+							 event.stopPropagation();
+						  });
 						$(".nav_news_icon").click(function(){
-							$(this).parent().find(".nav_news_popup").slideToggle(200);
+							$(this).parent().find(".nav_news_popup").slideToggle(50);
 							$(this).find("span").hide();
+							$(".nav_more").slideUp(50);
+							 $(".navbtn").removeClass("active");
 						});
 						
 					}
 					//是否显示更多弹窗
 					if(opts.morebtn){
-						$(".navbtn").on("click",function(){
-							$(".nav_more").slideToggle(100);
+						$(document).on("click",":not('.nav_more,.navbtn')",function(){
+							 $(".nav_more").slideUp(50);
+							 $(".navbtn").removeClass("active");
+						  })
+						  $(".nav_more").on("click",function(event){
+							 event.stopPropagation();
+						  });
+						$(".navbtn").on("click",function(event){
+							event.stopPropagation();
+							$(".nav_more").slideToggle(50);
 							$(this).toggleClass("active");
+							 $(".nav_news_box .nav_news_popup").slideUp(50);
 						});
+						
 						tofor($("#common"),opts.common,"a");//渲染常用app
 						tofor($("#lately"),opts.lately,"a");//渲染最近app
 						//渲染全部app
@@ -93,7 +114,7 @@ define(function(require) {
 
 					//创建设置弹窗
 					$("body").append($("#modal_mould").html());
-					$("#modal_mould,#nav_more_lli_mould,#nav_news_li_mould").remove();
+					$("#modal_mould,#nav_more_lli_mould,#nav_news_li_mould").remove();//去除所有隐藏待渲染的模板
 					opts.setup();
 				});
 		    });

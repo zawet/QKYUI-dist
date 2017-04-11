@@ -48,14 +48,14 @@ define({
 			},
 		"isinfo":true,//是否支持登录显示个人信息
 		"tea_info":{"name":"张晓明","isphoto":false,"photo":"images/tx01.png"},
-		"otherli":[["个人空间","href='#'"],["账户设置","href='#'"],["帮助中心","href='#'"],["退出","id='toOut'"]],
+		"otherli":[["切换身份","href='#'"],["账户设置","href='account_settings.html'"],["个人设置","href='#'"],["退出","id='toOut'"]],
 		setup:function(){
 			$(".setup").on("click",function(){
 				$("#comapp_setup").modal('show');
 			});	
 		}
 	},
-	news_analogdata:[
+	news_analogdata:[/*推送消息模拟数据*/
 		{
 			appname:"学习管理平台",
 			newsname:"在线测试开放答题",
@@ -93,5 +93,6 @@ define({
 			newscont:"课程中国文化概论的作业文化解析已有6名学生提交，提交率23%"
 		}
 	],
-	haveicon:["changyongshezhi","wangshangwenjuan","xiaoyuanbangong","xiaoyuanzhifu","yidongxiaoyuan","zhihuikongjian","zhihuixiaoyuan","zhinengpaike","zhinengxiaoyuan","zonghepingjia","zonghesuzhifenxi","zonghesuzhipingjia","jichushujufenxi","jiaoshichengchangdangan","xuexiguanlipingtai"] //已经有的图标名记录数组;
+	//已经有的图标名记录数组;
+	haveicon:["changyongshezhi","wangshangwenjuan","xiaoyuanbangong","xiaoyuanzhifu","yidongxiaoyuan","zhihuikongjian","zhihuixiaoyuan","zhinengpaike","zhinengxiaoyuan","zonghepingjia","zonghesuzhifenxi","zonghesuzhipingjia","jichushujufenxi","jiaoshichengchangdangan","xuexiguanlipingtai"] 
 });
