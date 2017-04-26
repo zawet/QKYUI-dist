@@ -41,21 +41,39 @@
                     <div class="li_a clear" id="lately"></div>
             </div>
             <div class="nav_more_lli">
-                    <h5 class="clear"><i class="qkyicon_mian mr5">&#xe643;</i><span>常用应用</span> <a class="setup fr">设置</a></h5>
+                    <h5 class="clear"><i class="qkyicon_mian mr5">&#xe643;</i><span>常用应用</span><a class="setup fr">设置</a>
+                    <!--<a class="setup fr" data-toggle="modal" data-target="#comapp_setup">设置</a>--></h5>
                     <div class="li_a clear" id="common"></div>
             </div>
         </div>
         <a class="appCenter clear  col-xs-3" href="appcenter.html"><i class="qkyicon_mian fl mr5 app">&#xe63e;</i><span class="fl">应用中心</span><i class="qkyicon_mian fr fz_12">&#xe641;</i></a>
         <div class="navline"></div>
         <div class="nav_more_right col-xs-9 clear" id="allapp">
+        	<div class="nav_more_havedata">
                 <div class="seachApp">
                   <i class="qkyicon_mian">&#xe649;</i>
-                  <input type="text" class="form-control" placeholder="搜索应用">
+                  <input type="text" class="form-control" placeholder="搜索应用" id="seachapp_inp">
                 </div>
-                <div class="clear">
+                <div class="clear scroll_box">
                     <div class="row_left"></div>
                     <div class="row_right"></div>
-                </div> 
+                </div>
+                <div class="seachApp_showbox"><!--搜索显示-->
+                    <div class="nav_more_lli yc">
+                        <h5 class="co_73 clear"><span>搜索到<span id="seachapp_num">5</span>条结果</span><i class="qkyicon_14 fr">&#xe618;</i></h5>
+                        <div class="li_a clear" id="seachapp_over">
+                        </div>
+                    </div>
+                    <div class="t_c nodata yc">
+                    <i class="qkyicon_mian fz_50 app_color">&#xe64c;</i>
+                    <div class="fz_14 co_73">没找到相关内容</div>
+                    </div> 
+                </div>
+            </div>
+            <div class="nav_more_nodata t_c nodata">
+            <i class="qkyicon_mian fz_60">&#xe64c;</i>
+            <div class="fz_14 co_73">暂无应用</div>
+            </div> 
         </div> 
     </div>
 </div>

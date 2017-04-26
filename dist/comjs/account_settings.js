@@ -33,11 +33,29 @@ define(function(require,exports) {
 				$(this).parent().next(".error_color").removeClass("yc");
 			}
 		});
+		//从显示到编辑
+		$(".form_toedit").on("click",function(){
+			$(this).parents(".form_show").hide().parent().find(".form_edit").show();
+		});
 		
-		$("#accset_save").click(function(){
-			$(".mask_poptips").fadeIn(100);
-			setTimeout(function(){$(".mask_poptips").fadeOut(100);},3000);
-		});	
+		//从编辑到显示
+		rach.radio_run(function(thiss){
+			 var thisval=thiss.find("span").html();
+			 $("#this_sex").html(thisval);
+			 thiss.parents(".form_edit").hide().parent().find(".form_show").show();
+			 mask_poptips();
+	    });
+		$("#this_sf_number_inp").focusout(function(){
+			var thisval=$(this).val();
+			$("#this_sf_number").html(thisval);
+			$(this).parents(".form_edit").hide().parent().find(".form_show").show();
+			mask_poptips();
+		});
+	}
+	
+	function mask_poptips(){
+		$(".mask_poptips").fadeIn(100);
+		setTimeout(function(){$(".mask_poptips").fadeOut(100);},3000);	
 	}
 	
 	
