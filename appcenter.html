@@ -30,12 +30,12 @@
                 <a class="btn btn-onlytxt appbtn_back"><i class="qkyicon_14 mr5">&#xe604;</i>返回</a>
                 <span class="nav_title"></span>
             </div>
-            <div class="seachApp"><i class="qkyicon_mian">&#xe649;</i><input type="text" class="form-control" placeholder="搜索应用"></div>
+            <div class="seachApp"><i class="qkyicon_mian">&#xe649;</i><input type="text" class="form-control" id="appcenter_input" placeholder="搜索应用"></div>
         </div>
     </div>
-    <div class="container mt15 appcenter_mian"></div>
-    <div class="container mt15 appcenter_sigmian yc"></div>
-    <div class="container mt15 appcenter_infomian yc">
+    <div class="container mt15 appcenter_mian appcenter_con"></div>
+    <div class="container mt15 appcenter_sigmian appcenter_con yc"></div>
+    <div class="container mt15 appcenter_infomian appcenter_con yc">
     	<div class="qkycadr app_infobox mb15">
             <div class="row">
                 <div class="col-sm-3">
@@ -71,6 +71,9 @@
             </div>
         </div>
     </div>
+    <div class="container mt15 appcenter_seachmian appcenter_con yc">
+    <div class="qkycadr appseach_box"></div>
+    </div>
     
     <div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
     
@@ -101,6 +104,18 @@
         </div>
     </div>
     
+    <!--无应用模板-->
+    <div class="yc" id="noappdata_mould">
+    	<div class="t_c nodata">
+            <i class="qkyicon_mian fz_100 app_color">&#xe64c;</i>
+            <div class="fz_16 co_33">没有找到相关应用</div>
+        </div>
+    </div>
+    <!--搜索到结果模板-->
+    <div class="yc" id="appseach_result_mould">
+        <h4>搜索到<span class="result_len"></span>条结果</h4>
+        <div class="appseach_result clear"></div>
+    </div>
     <!-- Modal -->
 	<div class="modal fade" id="stopapp" tabindex="-1" role="dialog" aria-labelledby="stopappLabel">
   <div class="modal-dialog modal-sm" role="document">

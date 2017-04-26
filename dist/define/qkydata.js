@@ -30,31 +30,32 @@ define({
 			["校园服务岗","href='#'"]
 		],
 		"allapp":{//所有app
-			"教育管理":[["校园办公","href='#'"],["校产管理","href='#'"],["基础数据管理","href='#'"]],
-			"教育大数据":[["基础数据分析","href='#'"],["综合素质分析","href='#'"],["学业水平分析","href='#'"],["微校园使用分析","href='#'"]],
+			"教育管理":[["校园办公","href='#1'"],["校产管理","href='#2'"],["基础数据管理","href='#'"]],
+			"教育大数据":[["基础数据分析","href='#'"],["综合素质分析","href='#'"],["学业水平分析","href='#'"],["微校园使用分析","href='#2'"]],
 			"教务管理":[["课务管理","href='#'"],["考务管理","href='#'"],["成绩管理","href='#'"],["资源中心","href='#'"],["个人资源","href='#'"]],
 			"资源平台":[["资源中心","href='#'"],["个人资源","href='#'"]],
 			"教师专业发展":[["教师业务档案","href='#'"],["教师成长档案","href='#'"],["教师培训","href='#'"],["教师考勤","href='#'"],["教师家访","href='#'"]],
 			"学生学业成长":[["学生电子信息","href='#'"],["综合素质评价","href='#'"],["学生成绩","href='#'"],["班级圈","href='#'"],["学生请假","href='#'"]],
 			"校园管理":[
-				["校园迎新","href='#'"],["门户管理","href='#'"],["校园缴费","href='#'"],
+				["校园迎新","href='#3'"],["门户管理","href='#'"],["校园缴费","href='#4'"],
 				["就餐管理","href='#'"],["宿舍管理","href='#'"],["电子图书馆","href='#'"],
 				["空间预约管理","href='#'"],["车辆预约管理","href='#'"],["党工团管理","href='#'"],
 				["信访管理","href='#'"],["运动会管理","href='#'"],["条形码打印管理","href='#'"],
-				["校园服务岗","href='#'"],["校园吉尼斯","href='#'"],["校友家园","href='#'"],
+				["校园服务岗","href='#5'"],["校园吉尼斯","href='#6'"],["校友家园","href='#7'"],
 				["电子班牌","href='#'"],["一卡通","href='#'"],["考勤管理","href='#'"]
 			],
 			"通用功能":[["通知公告","href='#'"],["通讯录","href='#'"],["行事历","href='#'"],["个人网盘","href='#'"],["调查问卷","href='#'"]],
 			},
 		"isinfo":true,//是否支持登录显示个人信息
 		"tea_info":{"name":"张晓明","isphoto":false,"photo":"images/tx01.png"},
-		"otherli":[["切换身份","href='#'"],["账户设置","href='account_settings.html'"],["个人设置","href='#'"],["退出","id='toOut'"]],
+		"otherli":[["切换身份","href='switch_user.html'"],["账户设置","href='account_settings.html'"],["个人设置","href='#'"],["退出","href='login.html'"]],
 		setup:function(){
 			$(".setup").on("click",function(){
 				$("#comapp_setup").modal('show');
 			});	
-		}
-	},
+		},
+		qkynavafter:function(){},
+	isnews:true,
 	news_analogdata:[/*推送消息模拟数据*/
 		{
 			appname:"学习管理平台",
@@ -92,7 +93,8 @@ define({
 			newsgettime:"2017-03-27 11:00",
 			newscont:"课程中国文化概论的作业文化解析已有6名学生提交，提交率23%"
 		}
-	],
+	]
+	},
 	//已经有的图标名记录数组;
 	haveicon:["changyongshezhi","wangshangwenjuan","xiaoyuanbangong","xiaoyuanzhifu","yidongxiaoyuan","zhihuikongjian","zhihuixiaoyuan","zhinengpaike","zhinengxiaoyuan","zonghepingjia","zonghesuzhifenxi","zonghesuzhipingjia","jichushujufenxi","jiaoshichengchangdangan","xuexiguanlipingtai"] 
 });

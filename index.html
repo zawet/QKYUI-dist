@@ -15,6 +15,7 @@
     <link href="css/iconfont.css" rel="stylesheet">
     <link href="css/qkybase1.4.css" rel="stylesheet">
     <link href="css/quickcss.css" rel="stylesheet">
+    <link href="css/democadr.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -24,25 +25,520 @@
   <body class="qkybody">
     <div class="navbar navbar-default navbar-fixed-top headernav " role="navigation" id="qkynav"></div>
     <div class="navbar navbar-inverse navbar-fixed-top headernav yc" role="navigation" id="qkynav_inverse"></div>
-    <div class="container mt20" style="background:#f1f1f1; text-align:center;">1080档位</div>
-    <div class="container-md" style="background:#e1e1e1;text-align:center;">1200档位</div>
-    <div class="container-l" style="background:#d1d1d1;text-align:center;">1366档位</div>
-    <div class="container-xl" style="background:#c1c1c1;text-align:center;">1440档位</div>
-    <div class="container-fluid" style="background:#333; color:#fff;text-align:center;">全屏档位</div>
-    <div class="container-p90" style="background:#b1b1b1;text-align:center;">90%档位</div>
-    <div class="container-p80" style="background:#a1a1a1;text-align:center;">80%档位</div>
-    <div class="container-p60" style="background:#999;text-align:center;">60%档位</div>
-    <div class="container t_c mt20">以上是演示各大框档位的适应性，在开发项目的时候请选择一个适合你项目的档位进行开发，一但选择了一个档位后，你整个项目就只能用这个档位了，不允许一个项目里用上两个或者两个以上的档位</div>
+    <div class="container t_c mt15 mb15 pl0 pr0">
+    <div class="qkycadr t_c pa20 ">
+    <h2 class="mt5">1.档位演示和说明</h2>
+    <span class="fz_16">以下是演示各大框档位的适应性，在开发项目的时候请选择一个适合你项目的档位进行开发，一但选择了一个档位后，你整个项目就只能用这个档位了，不允许一个项目里用上两个或者两个以上的档位</span> 
+    </div>
+    </div>
+    <div class="container mb15 pa10" style="background:#f1f1f1;text-align:center;">1080档位，档位css：<code>container</code></div>
+    <div class="container-md mb15 pa10" style="background:#e1e1e1;text-align:center;">1200档位，档位css：<code>container-md</code></div>
+    <div class="container-l mb15 pa10" style="background:#d1d1d1;text-align:center;">1366档位，档位css：<code>container-l</code></div>
+    <div class="container-xl mb15 pa10" style="background:#c1c1c1;text-align:center;">1440档位，档位css：<code>container-xl</code></div>
+    <div class="container-fluid mb15 pa10" style="background:#333; color:#fff;text-align:center;">全屏档位，档位css：<code>container-fluid</code></div>
+    <div class="container-p90 mb15 pa10" style="background:#b1b1b1;text-align:center;">90%档位，档位css：<code>container-p90</code></div>
+    <div class="container-p80 mb15 pa10" style="background:#a1a1a1;text-align:center;">80%档位，档位css：<code>container-p80</code></div>
+    <div class="container-p60 mb15 pa10" style="background:#999;text-align:center;">60%档位，档位css：<code>container-p60</code></div>
+    
+    <div class="container mt15 pl0 pr0">
+        <div class="row">
+            <div class="col-sm-12  mb20">
+                <div class="qkycadr t_c pa20">
+                    <h2 class="mt5">2.布局流和模块化演示</h2>
+                    <span class="fz_16"> 以下是布局流和模块演示，里面包含了栅格系统，卡片式<br/>和模块里的一些基础元素的组合，以及一些ui组件的展示（下拉菜单，表格，导航条，分页）</span>
+                </div>
+            </div>
+            <div class="col-sm-3 pr5">
+             <div class="qkycadr mb15 info_cadr">
+                 <div class="clear"><a class="btn btn-onlytxt fr">编辑资料</a></div>
+                 <div class="info_mian clear">
+                     <div class="info_photo fl"><img src="images/tx02.png"></div>
+                     <div class="info_cont fr">
+                         <label>赵小媛（教师）</label>
+                         <span>北京师范大学第一小学</span>
+                         <span>三年级 语文</span>
+                     </div>
+                 </div>
+                 <div class="info_atten clear">
+                     <div class="info_atten_list"><label>关注</label><span>337</span></div>
+                     <div class="info_atten_list"><label>粉丝</label><span>426</span></div>
+                     <div class="info_atten_list"><label>说说</label><span>1825</span></div>
+                 </div>
+                 <div class="info_comapp">
+                     <div class="info_comapp_title">常用应用</div>
+                     <ul>
+                         <li><i class="qkyicon_20 mr5 fz_16">&#xe628;</i>学习管理平台</li>
+                         <li><i class="qkyicon_20 mr5 fz_16">&#xe62c;</i>课务管理</li>
+                         <li><i class="qkyicon_20 mr5 fz_16">&#xe61a;</i>校园办公</li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="qkycadr mb15 myclasstable_cadr">
+                 <div class="cadr_title fz_16">我的课表</div>
+                 <div class="pa10">
+                     <table class="table table-condensed table-bordered">
+                     <thead><tr><th></th><th width="43%">今天（周三）</th><th width="43%">今天（周四）</th></tr></thead>
+                     <tbody>
+                         <tr><td class="number">1</td><td>语文</td><td>语文</td></tr>
+                         <tr><td class="number">2</td><td>生物</td><td>语文</td></tr>
+                         <tr><td class="number">3</td><td>英语</td><td>英语</td></tr>
+                         <tr><td class="number">4</td><td>语文</td><td></td></tr>
+                         <tr><td class="number">5</td><td>品德与生活</td><td>语文</td></tr>
+                         <tr><td class="number">6</td><td></td><td>化学</td></tr>
+                         <tr><td class="number">7</td><td></td><td></td></tr>
+                         <tr><td class="number">8</td><td>生物</td><td>声音与影像的编辑制作/wj104（微机室）</td></tr>
+                         <tr><td class="number">9</td><td>晚自习</td><td>晚自习</td></tr>
+                         <tr><td class="number">10</td><td>晚自习</td><td>晚自习</td></tr>
+                     </tbody>
+                     </table>
+                 </div>
+             </div>
+             <div class="qkycadr mb15">
+                 <div class="cadr_title pl10 pt10 fz_16">微校企业号</div>
+                 <div class="t_c pa10">
+                     <img src="images/login_demoqw.png">
+                     <div class="mt10">扫描二维码关注北京师范大学第一小学微信企业号，家校沟通更方便！</div>
+                 </div>
+             </div>
+            </div>
+            <div class="col-sm-6 pr10 pl10">
+             <div class="qkycadr mb15 pa5 newlist_cadr">
+                 <ul class="nav nav-tabs">
+                  <li role="presentation" class="active"><a href="#">待办事项</a></li>
+                  <li role="presentation"><a href="#">办公待办</a></li>
+                  <li role="presentation"><a href="#">教学待办</a></li>
+                 </ul>
+                 <ul class="newlist_ul">
+                 <li class="clear">
+                     <label class="fl">办公室主任外出调研</label>
+                     <a class="btn btn-default btn-sm fl ml10">待办流程</a>
+                     <a class="fr">办理></a>
+                     <span class="fr mr10">2017.03.25 13:32</span>
+                 </li>
+                 <li class="clear">
+                     <label class="fl">办公室主任外出调研</label>
+                     <a class="btn btn-default btn-sm fl ml10">待办流程</a>
+                     <a class="fr">办理></a>
+                     <span class="fr mr10">2017.03.25 13:32</span>
+                 </li>
+                 <li class="clear">
+                     <label class="fl">办公室主任外出调研</label>
+                     <a class="btn btn-default btn-sm fl ml10">待办流程</a>
+                     <a class="fr">办理></a>
+                     <span class="fr mr10">2017.03.25 13:32</span>
+                 </li>
+                 <li class="clear">
+                     <label class="fl">办公室主任外出调研</label>
+                     <a class="btn btn-default btn-sm fl ml10">待办流程</a>
+                     <a class="fr">办理></a>
+                     <span class="fr mr10">2017.03.25 13:32</span>
+                 </li>
+                 <li class="clear">
+                     <label class="fl">办公室主任外出调研</label>
+                     <a class="btn btn-default btn-sm fl ml10">待办流程</a>
+                     <a class="fr">办理></a>
+                     <span class="fr mr10">2017.03.25 13:32</span>
+                 </li>
+                 <li class="clear">
+                     <label class="fl">办公室主任外出调研</label>
+                     <a class="btn btn-default btn-sm fl ml10">待办流程</a>
+                     <a class="fr">办理></a>
+                     <span class="fr mr10">2017.03.25 13:32</span>
+                 </li>
+                 </ul>
+             </div>
+             <div class="mb15 write_cadr">
+                 <textarea class="form-control" rows="4" placeholder="想说点什么"></textarea>
+                 <div class="write_bar clear pt5">
+                     <a class="btn btn-onlytxt fl pl0 pr20"><i class="qkyicon_mian  mr5">&#xe642;</i>表情</a>
+                     <a class="btn btn-onlytxt fl pl0 pr20"><i class="qkyicon_mian  mr5">&#xe648;</i>图片</a>
+                     <a class="btn btn-onlytxt fl pl0 pr20"><i class="qkyicon_mian  mr5">&#xe64b;</i>视频</a>
+                     <a class="btn btn-onlytxt fl pl0 pr20"><i class="qkyicon_14  mr5">&#xe603;</i>文档</a>
+                     <a class="btn btn-primary fr ml15">发表说说</a>
+                     <div class="dropdown qkydropdown havechoose fr">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                         <span class="value">全部</span>
+                         <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                         <li role="presentation"><a>选项1</a></li>
+                         <li role="presentation"><a>选项2</a></li>
+                         <li role="presentation"><a>选项3</a></li>
+                        </ul>
+                     </div>
+                 </div>
+             </div>
+             
+             <ul class="nav nav-tabs active_nav">
+                  <li role="presentation" class="active"><a href="#">全部动态</a></li>
+                  <li role="presentation"><a href="#">学校动态</a></li>
+                  <li role="presentation"><a href="#">好友动态</a></li>
+                  <li role="presentation"><a href="#">我的动态</a></li>
+             </ul>
+             <div class="qkycadr mb15 active_cadr bor_nt">
+                 <div class="active_list clear">
+                     <div class="active_photo"><img src="images/tx02.png"></div>
+                     <div class="active_cont">
+                         <div class="clear mb15">
+                            <span class="fz_we username fl">孙小美（教师）</span><span class="fl co_93">发表了说说</span>
+                            <i class="qkyicon_14 fr">&#xe617;</i>
+                         </div>
+                         <div class="usersendcont fz_14">漫长的暑假过去了，又回到亲切的校园，五年级2班的同学们都准备好了吗？我们又可以见面了！</div>
+                         <div class="clear mt15 co_73">
+                             <span class="fl">2017.02.21</span>
+                             <div class="fr"><i class="qkyicon_20 fz_14">&#xe631;</i>23<i class="qkyicon_20 fz_14 ml5">&#xe619;</i>42</div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="active_list clear">
+                     <div class="active_photo"><img src="images/tx02.png"></div>
+                     <div class="active_cont">
+                         <div class="clear mb15">
+                            <span class="fz_we username fl">赵小媛（教师）</span><span class="fl co_93">发表了说说</span>
+                            <i class="qkyicon_14 fr">&#xe617;</i>
+                         </div>
+                         <div class="usersendcont fz_14">漫长的暑假过去了，又回到亲切的校园，五年级2班的同学们都准备好了吗？我们又可以见面了！</div>
+                         <div class="usersendphoto row">
+                         <div class="col-xs-4"><img src="images/tx02.png"></div>
+                         <div class="col-xs-4"><img src="images/tx01.png"></div>
+                         <div class="col-xs-4"><img src="images/loginbg.png"></div>
+                         </div>
+                         <div class="clear mt15 co_73">
+                             <span class="fl">2017.02.21</span>
+                             <div class="fr"><i class="qkyicon_20 fz_14">&#xe631;</i>23<i class="qkyicon_20 fz_14 ml5">&#xe619;</i>42</div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="active_list clear">
+                     <div class="active_photo"><img src="images/tx01.png"></div>
+                     <div class="active_cont">
+                         <div class="clear mb15">
+                            <span class="fz_we username fl">黄小明（教师）</span><span class="fl co_93">发表了说说</span>
+                            <i class="qkyicon_14 fr">&#xe617;</i>
+                         </div>
+                         <div class="qkycadr pa15 clear ba_f5"><span class="fz_we">初三尊老爱老活动场地意见征集</span><a class="fr">参与></a></div>
+                         <div class="clear mt15 co_73">
+                             <span class="fl">2017.02.21</span>
+                             <div class="fr"><i class="qkyicon_20 fz_14">&#xe631;</i>23<i class="qkyicon_20 fz_14 ml5">&#xe619;</i>42</div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="active_list clear">
+                     <div class="active_photo"><img src="images/tx01.png"></div>
+                     <div class="active_cont">
+                         <div class="clear mb15">
+                            <span class="fz_we username fl">吴小波（教师）</span><span class="fl co_93">发表了说说</span>
+                            <i class="qkyicon_14 fr">&#xe617;</i>
+                         </div>
+                         <div class="qkycadr pa15 clear ba_f5"><span class="fz_we">分类题练习集锦</span><a class="fr">查看></a></div>
+                         <div class="clear mt15 co_73">
+                             <span class="fl">2017.02.21</span>
+                             <div class="fr"><i class="qkyicon_20 fz_14">&#xe631;</i>23<i class="qkyicon_20 fz_14 ml5">&#xe619;</i>42</div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="qkypage mt20 mb20 page_center"> 
+                            <ul class="nav nav-pills"> 
+                             <li class="disabled page_prv"><a href="#">上一页</a></li>
+                             <li class="active"><a href="#">1</a></li>
+                             <li><a href="#">2</a></li>
+                             <li><a href="#">...</a></li>
+                             <li><a href="#">4</a></li>
+                             <li><a href="#">5</a></li>
+                             <li class="page_next"><a href="#">下一页</a></li>
+                             <li class="form-group mb0 page_input"><input type="text" class="form-control" placeholder="输入页面"></li>
+                             <li class="page_input"><a class="btn btn-default">GO</a></li>
+                            </ul>
+                  </div>
+             </div>
+            </div>
+            <div class="col-sm-3 pl5">
+                <div class="qkycadr mb15 note_cadr">
+                    <div class="cadr_title pl10 pt10 pr10 fz_16 clear">通知公告<a class="fr fz_12">更多></a></div>
+                    <ul class="newlist_ul mt10">
+                     <li class="clear">
+                         <a class="btn btn-default btn-sm fl mr5">学校</a>
+                         <label class="fl wd7 dian3">第二次校园卫生检查通知</label>
+                         <span class="fl">1小时前</span>
+                     </li>
+                     <li class="clear">
+                         <a class="btn btn-default btn-sm fl mr5">学校</a>
+                         <label class="fl wd7 dian3">期末考试期间图书馆开放时间调整通知</label>
+                         <span class="fl">1小时前</span>
+                     </li>
+                     <li class="clear">
+                         <a class="btn btn-default btn-sm fl mr5">学校</a>
+                         <label class="fl wd7 dian3">期末考试期间图书馆开放时间调整通知</label>
+                         <span class="fl">2天前</span>
+                     </li>
+                     <li class="clear">
+                         <a class="btn btn-default btn-sm fl mr5">班级</a>
+                         <label class="fl wd7 dian3">第二次模拟考试时间安排</label>
+                         <span class="fl">2天前</span>
+                     </li>
+                     <li class="clear">
+                         <a class="btn btn-default btn-sm fl mr5">班级</a>
+                         <label class="fl wd7 dian3">第二次模拟考试时间安排</label>
+                         <span class="fl">2017.02.23 15:34</span>
+                     </li>
+                    </ul>
+                </div>
+                
+                <div class="qkycadr mb15 ad_cadr">
+                    <img src="images/loginbg.png">
+                    <div class="ad_masktxt">
+                    <div><span>第二届微课大赛开始啦</span><a>点我报名吧！</a></div>
+                    </div>
+                </div>
+                
+                <div class="qkycadr mb15 todyhot_cadr"><div class="cadr_title fz_16">今日推荐</div>
+                    <div class="tidayhot_list clear">
+                        <div class="tidayhot_photo fl"><img src="images/tx01.png"></div>
+                        <div class="tidayhot_info fl">
+                            <div class="clear"><label class="fl">刘小伟</label><a class="app_color fr">+ 关注</a></div>
+                            <span>1.2万粉丝 | 58动态</span>
+                        </div>
+                    </div>
+                    <div class="tidayhot_list clear">
+                        <div class="tidayhot_photo fl"><img src="images/tx02.png"></div>
+                        <div class="tidayhot_info fl">
+                            <div class="clear"><label class="fl">杜小花</label><a class="app_color fr">+ 关注</a></div>
+                            <span>1.2万粉丝 | 58动态</span>
+                        </div>
+                    </div>
+                    <div class="tidayhot_list clear">
+                        <div class="tidayhot_photo fl"><img src="images/tx02.png"></div>
+                        <div class="tidayhot_info fl">
+                            <div class="clear"><label class="fl">李小彤</label><a class="app_color fr">+ 关注</a></div>
+                            <span>1.2万粉丝 | 58动态</span>
+                        </div>
+                    </div>
+                    <div class="tidayhot_list clear">
+                        <div class="tidayhot_photo fl"><img src="images/tx02.png"></div>
+                        <div class="tidayhot_info fl">
+                            <div class="clear"><label class="fl">杜小春</label><a class="app_color fr">+ 关注</a></div>
+                            <span>1.2万粉丝 | 58动态</span>
+                        </div>
+                    </div>
+                    <div class="tidayhot_list clear bor_nb">
+                        <div class="tidayhot_photo fl"><img src="images/tx02.png"></div>
+                        <div class="tidayhot_info fl">
+                            <div class="clear"><label class="fl">周小湘</label><a class="app_color fr">+ 关注</a></div>
+                            <span>1.2万粉丝 | 58动态</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qkycadr mb15 layjoin_cadr"><div class="cadr_title fz_16">最近来访</div>
+                    <div class="clear">
+                    <div class="layjoin_list">
+                    <div class="layjoin_photo"><img src="images/tx01.png"></div>
+                    <label>马小飞</label><span>1分钟前</span>
+                    </div>
+                    <div class="layjoin_list">
+                    <div class="layjoin_photo"><img src="images/tx01.png"></div>
+                    <label>张小强</label><span>2小时前</span>
+                    </div>
+                    <div class="layjoin_list">
+                    <div class="layjoin_photo"><img src="images/tx02.png"></div>
+                    <label>陈小佳</label><span>5小时前</span>
+                    </div>
+                    <div class="layjoin_list">
+                    <div class="layjoin_photo"><img src="images/tx01.png"></div>
+                    <label>武小晨</label><span>8小时前</span>
+                    </div>
+                    <div class="layjoin_list">
+                    <div class="layjoin_photo"><img src="images/tx02.png"></div>
+                    <label>罗小静</label><span>1天前</span>
+                    </div>
+                    <div class="layjoin_list">
+                    <div class="layjoin_photo"><img src="images/tx02.png"></div>
+                    <label>杜小花</label><span>2天前</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="qkycadr mb15"><div class="cadr_title fz_16 clear">推荐资源<a class="btn btn-default fr btn-sm" data-toggle="modal" data-target="#upfile">上传资源</a></div></div>
+            </div>
+        </div>
+    </div>
+    
     <div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+    <div class="modal fade" id="upfile" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">选择文件</h4>
+          </div>
+          <div class="modal-body ">
+            <ul class="nav nav-tabs bor_nb">
+            <li role="presentation" class="active" toshow="local"><a >本地上传</a></li>
+            <li role="presentation" toshow="online"><a >个人网盘</a></li>
+            </ul>
+            <div class="nav_tabs_mian local qkycadr">
+                <div class="t_c pt20 pb20 mt20">
+                    <a class="btn btn-primary btn-lg app_background po_r"><i class="qkyicon_14 mr10 fz_16">&#xe616;</i>选择文件<input type="file" class="ycfile"></a>
+                    <div class="co_73 t_c">最大上传文件大小2GB</div>
+                </div>
+                <table class="table table-condensed bor_b">
+                <thead><tr><th colspan="4">资源名</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td width="5%" valign="middle"><i class="qkyicon_22 app_color">&#xe633;</i></td>
+                    <td width="60%" valign="middle">陕西省教育信息化建设三年行动计划（2015-2017）.doc<br/>2017.04.10 15:00 大小：19KB</td>
+                    <td width="30%" valign="middle"><div class="progress mb0"><div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div></div></td>
+                    <td width="5%" valign="middle"><i class="qkyicon_14">&#xe613;</i></td>
+                </tr>
+                <tr>
+                    <td width="5%" valign="middle"><i class="qkyicon_22 app_color">&#xe633;</i></td>
+                    <td width="60%" valign="middle">陕西省教育信息化建设三年行动计划（2015-2017）.doc<br/>2017.04.10 15:00 大小：19KB</td>
+                    <td width="30%" valign="middle"><div class="progress mb0"><div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div></div></td>
+                    <td width="5%" valign="middle"><i class="qkyicon_14">&#xe613;</i></td>
+                </tr>
+                <tr>
+                    <td width="5%" valign="middle"><i class="qkyicon_22 app_color">&#xe633;</i></td>
+                    <td width="60%" valign="middle">陕西省教育信息化建设三年行动计划（2015-2017）.doc<br/>2017.04.10 15:00 大小：19KB</td>
+                    <td width="30%" valign="middle"><div class="progress mb0"><div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div></div></td>
+                    <td width="5%" valign="middle"><i class="qkyicon_14">&#xe613;</i></td>
+                </tr>
+                <tr>
+                    <td width="5%" valign="middle"><i class="qkyicon_22 app_color">&#xe633;</i></td>
+                    <td width="60%" valign="middle">陕西省教育信息化建设三年行动计划（2015-2017）.doc<br/>2017.04.10 15:00 大小：19KB</td>
+                    <td width="30%" valign="middle"><div class="progress mb0"><div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div></div></td>
+                    <td width="5%" valign="middle"><i class="qkyicon_14">&#xe613;</i></td>
+                </tr>
+                </tbody>
+                </table>
+                
+                <div class="qkypage mt20 pb20 page_center"> 
+                        <ul class="nav nav-pills"> 
+                         <li class="disabled page_prv"><a href="#">上一页</a></li>
+                         <li class="active"><a href="#">1</a></li>
+                         <li><a href="#">2</a></li>
+                         <li><a href="#">...</a></li>
+                         <li><a href="#">4</a></li>
+                         <li><a href="#">5</a></li>
+                         <li class="page_next"><a href="#">下一页</a></li>
+                         <li class="form-group mb0 page_input"><input type="text" class="form-control" placeholder="输入页面"></li>
+                         <li class="page_input"><a class="btn btn-default">GO</a></li>
+                        </ul>
+                </div>
+            </div>
+            
+            <div class="nav_tabs_mian online qkycadr yc">
+                <div class="clear pa10">
+                    <div class="fl fz_16 height30_line">文档</div>
+                    <div class="fr col-xs-3 pa0">
+                        <div class="seachApp wd100 ma0">
+                          <i class="qkyicon_mian">&#xe649;</i>
+                          <input type="text" class="form-control" placeholder="搜索应用" id="seachapp_inp">
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-condensed atd bor_b">
+                 <thead><tr>
+                 <th ><label class="checkbox-qky mb8 parent" lj="fc_list" isc="no"><a class="checkbox_a ma0"><i class="qkyicon_14">&#xe619;</i></a></label></th>
+                 <th width="60%">
+                 <div class="btn-group qkydropdown havechoose dropup">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                     <span class="value">资源名</span>
+                     <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                     <li role="presentation"><a>选项1</a></li>
+                     <li role="presentation"><a>选项2</a></li>
+                     <li role="presentation"><a>选项3</a></li>
+                    </ul>
+                 </div>
+                 </th>
+                 <th width="35%">
+                 <div class="btn-group qkydropdown havechoose dropup">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                     <span class="value">大小</span>
+                     <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                     <li role="presentation"><a>选项1</a></li>
+                     <li role="presentation"><a>选项2</a></li>
+                     <li role="presentation"><a>选项3</a></li>
+                    </ul>
+                 </div>
+                 </th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                     <tr><td><label class="checkbox-qky mb0 child" lj="fc_list"><a class="checkbox_a ma0"><i class="qkyicon_14">&#xe619;</i></a></label></td>
+                         <td><i class="qkyicon_22 app_color mr10">&#xe633;</i>商周青铜雕刻的艺术先河.doc</td>
+                         <td>2.56M</td>
+                     </tr>
+                     <tr><td><label class="checkbox-qky mb0 child" lj="fc_list"><a class="checkbox_a ma0"><i class="qkyicon_14">&#xe619;</i></a></label></td>
+                         <td><i class="qkyicon_22 app_color mr10">&#xe633;</i>商周青铜雕刻的艺术先河.doc</td>
+                         <td>2.56M</td>
+                     </tr>
+                     <tr><td><label class="checkbox-qky mb0 child" lj="fc_list"><a class="checkbox_a ma0"><i class="qkyicon_14">&#xe619;</i></a></label></td>
+                         <td><i class="qkyicon_22 app_color mr10">&#xe633;</i>商周青铜雕刻的艺术先河.doc</td>
+                         <td>2.56M</td>
+                     </tr>
+                     <tr><td><label class="checkbox-qky mb0 child" lj="fc_list"><a class="checkbox_a ma0"><i class="qkyicon_14">&#xe619;</i></a></label></td>
+                         <td><i class="qkyicon_22 app_color mr10">&#xe633;</i>商周青铜雕刻的艺术先河.doc</td>
+                         <td>2.56M</td>
+                     </tr>
+                     <tr><td><label class="checkbox-qky mb0 child" lj="fc_list"><a class="checkbox_a ma0"><i class="qkyicon_14">&#xe619;</i></a></label></td>
+                         <td><i class="qkyicon_22 app_color mr10">&#xe633;</i>商周青铜雕刻的艺术先河.doc</td>
+                         <td>2.56M</td>
+                     </tr>
+                     <tr><td><label class="checkbox-qky mb0 child" lj="fc_list"><a class="checkbox_a ma0"><i class="qkyicon_14">&#xe619;</i></a></label></td>
+                         <td><i class="qkyicon_22 app_color mr10">&#xe633;</i>商周青铜雕刻的艺术先河.doc</td>
+                         <td>2.56M</td>
+                     </tr>
+                     <tr><td><label class="checkbox-qky mb0 child" lj="fc_list"><a class="checkbox_a ma0"><i class="qkyicon_14">&#xe619;</i></a></label></td>
+                         <td><i class="qkyicon_22 app_color mr10">&#xe633;</i>商周青铜雕刻的艺术先河.doc</td>
+                         <td>2.56M</td>
+                     </tr>
+                     
+                 </tbody>
+                 </table>
+                
+                <div class="qkypage mt20 pb20 page_center"> 
+                        <ul class="nav nav-pills"> 
+                         <li class="disabled page_prv"><a href="#">上一页</a></li>
+                         <li class="active"><a href="#">1</a></li>
+                         <li><a href="#">2</a></li>
+                         <li><a href="#">...</a></li>
+                         <li><a href="#">4</a></li>
+                         <li><a href="#">5</a></li>
+                         <li class="page_next"><a href="#">下一页</a></li>
+                         <li class="form-group mb0 page_input"><input type="text" class="form-control" placeholder="输入页面"></li>
+                         <li class="page_input"><a class="btn btn-default">GO</a></li>
+                        </ul>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            
+            <button type="button" class="btn btn-primary app_background">确定</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
     <script src="dist/jq/1.11.1/jquery.min.js"></script>
     <!--模块化js-->
     <script src="dist/sea.js"></script>
     <script src="dist/seaconfig.js"></script>
     <script>
-	var data={}
-     seajs.use(["bs","nav"],function(){
-		 $("#qkynav").qkynav();
+     seajs.use(["bs","nav","ra_ch","dw"],function(b,n,rach){
+		//$("#qkynav").qkynav({lately:[["暂无访问记录",""]],common:[["暂未设置",""]],allapp:""});//没有应用的时候，没设置常用，没最近应用
+		// $("#qkynav").qkynav({lately:[["暂无访问记录",""]],common:[["暂未设置",""]]});//有应用，没设置常用，没最近应用
+		 //$("#qkynav").qkynav({news_analogdata:""});//没消息的时候
+		 $("#qkynav").qkynav();//没消息的时候
 		 /*$("#qkynav_inverse").qkynav({logosrc:"images/nav_logo/logo.png"});*/
+		 rach.rach_run(function(t){},function(t){});
+		 $(".nav-tabs li").on("click",function(){
+		 	$(this).addClass("active").siblings().removeClass("active"); 
+			$(".nav_tabs_mian").addClass("yc");
+			$(".nav_tabs_mian."+$(this).attr("toshow")).removeClass("yc");
+		 });
+		 
 	});
     </script>
   </body>

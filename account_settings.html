@@ -31,66 +31,74 @@
             </div>
             <div class="news_rightmian col-sm-10 basicinfo">
                 <div class="qkycadr">
-                    <h3 class="news_title"><i class="qkyicon_mian mr5 fz_24">&#xe64a;</i><span>基本信息</span></h3> 
-                    <form class="form-horizontal accset_form">
-                      <div class="form-group">
-                        <label class="col-sm-2 control-label pr0">当前头像：</label>
-                        <div class="col-sm-10 pl0 clear changephotos_box">
+                    <h3 class="news_title bor_nb"><i class="qkyicon_mian mr5 fz_24">&#xe64a;</i><span>基本信息</span></h3> 
+                    <div class="title_bar"><i class="qkyicon_mian">&#xe64e;</i>用户头像</div>
+                    <div class="changephotos_box clear">
                           <div class="fl"><img src="images/tx02.png" id="headphoto"></div>
                           <div class="fl pl20">
                           <a class="btn btn-default"  data-toggle="modal" data-target="#changephotos_modal"><i class="qkyicon_mian mr5">&#xe64b;</i>更换头像</a>
                           <span>支持jpg、png、gif或bmp格式的图片，建议大小小于1M,此控件建议在ie10以上使用</span>
                           </div>
-                        </div>
-                      </div> 
-                      <div class="form-group">
-                        <label class="col-sm-2 control-label pr0">姓名：</label>
-                        <div class="col-sm-6 pl0">
-                          <input type="text" class="form-control"  value="张嘉鸣" readonly>
-                        </div>
-                      </div>
+                    </div>
+                    <div class="title_bar"><i class="qkyicon_mian">&#xe64d;</i>用户资料</div>
+                    <form class="form-horizontal accset_form">
+                      
                       <div class="form-group">
                         <label class="col-sm-2 control-label pr0">性别：</label>
-                        <div class="col-sm-6 pl0">
+                        <div class="col-sm-6 pl0 form_edit yc">
                           <div class="radio pt0 accset">
-                           <label class="radio-qky clear radio-inline pt0 pl0 select"><a class="radio_a fl"><b></b></a><span class="fr ml5">男</span></label>
-                           <label class="radio-qky clear radio-inline pt0"><a class="radio_a fl"><b></b></a><span class="fr ml5">女</span></label>
+                           <label class="radio-qky clear radio-inline pt0 pl0 select accset_save"><a class="radio_a fl"><b></b></a><span class="fr ml5">男</span></label>
+                           <label class="radio-qky clear radio-inline pt0 accset_save"><a class="radio_a fl"><b></b></a><span class="fr ml5">女</span></label>
                           </div>
                         </div>
+                        <div class="col-sm-6 pl0 form_show">
+                        <div class="height30_line"><span id="this_sex">男</span><i class="qkyicon_14 ml10 app_color form_toedit">&#xe60f;</i></div>
+                        </div>
                       </div>
-                      <div class="form-group">
+                      <div class="form-group pb15">
                         <label class="col-sm-2 control-label pr0">身份证号：</label>
-                        <div class="col-sm-6 pl0">
-                          <input type="text" class="form-control" value="610105198906035326" >
+                        <div class="col-sm-6 pl0 form_edit yc">
+                          <input type="text" class="form-control" id="this_sf_number_inp" value="610105198906035326" >
                         </div>
                         <div class="col-sm-offset-2 col-sm-10 pl0 error_color yc">身份证号填写有误</div>
+                        
+                        <div class="col-sm-6 pl0 form_show">
+                        <div class="height30_line"><span id="this_sf_number">610105198906035326</span><i class="qkyicon_14 ml10 app_color form_toedit">&#xe60f;</i></div>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label pr0">姓名：</label>
+                        <div class="col-sm-6 pl0"><div class="height30_line co_73">张嘉鸣</div>
+                          <!--<input type="text" class="form-control"  value="张嘉鸣" readonly>-->
+                        </div>
                       </div>
                       <div class="form-group">
                         <label class="col-sm-2 control-label pr0">所属学校：</label>
-                        <div class="col-sm-6 pl0">
-                          <input type="text" class="form-control"  value="北京市海淀区高新区第一小学" readonly>
+                        <div class="col-sm-6 pl0"><div class="height30_line co_73">北京市海淀区高新区第一小学</div>
+                          <!--<input type="text" class="form-control"  value="北京市海淀区高新区第一小学" readonly>-->
                         </div>
                       </div>
-                      <div class="form-group pb20">
+                      <div class="form-group">
                         <label  class="col-sm-2 control-label pr0">平台身份：</label>
-                        <div class="col-sm-6 pl0">
-                          <input type="text" class="form-control" value="教师" readonly> 
+                        <div class="col-sm-6 pl0"><div class="height30_line co_73">教师</div>
+                          <!--<input type="text" class="form-control" value="教师" readonly> -->
                         </div>
                       </div>
                       
-                      <div class="form-group submit_box">
+<!--                      <div class="form-group submit_box">
                         <div class="col-sm-10 pl0">
                           <button type="button" class="btn btn-primary app mr10" id="accset_save">保存</button>
                           <button type="button" class="btn btn-default">取消</button>
                         </div>
-                      </div>
+                      </div>-->
                     </form>
                 </div>
             </div>
             <div class="news_rightmian col-sm-10 fixphone yc">
                 <div class="qkycadr">
                     <h3 class="news_title"><i class="qkyicon_mian mr5 fz_24">&#xe645;</i><span>修改手机号</span></h3>
-                    <form class="form-horizontal accset_form" id="login_befor">
+                    <form class="form-horizontal accset_form pl20 pr20" id="login_befor">
                     <div class="co_73 pb15">为确保用户安全性，请先输入登录密码确认身份！</div>
                       <div class="form-group pb20">
                         <label class="col-sm-2 control-label pr0">登录密码：</label>
@@ -100,12 +108,12 @@
                         <div class="col-sm-offset-2 col-sm-10 pl0 error_color yc">密码有误！</div>
                       </div>
                       <div class="form-group submit_box">
-                        <div class="col-sm-10 pl0">
+                        <div class="col-sm-10 pl0 col-sm-offset-2">
                           <button type="button" class="btn btn-primary app">确定</button>  
                         </div>
                       </div>
                     </form>
-                    <form class="form-horizontal accset_form yc" id="login_after"> 
+                    <form class="form-horizontal accset_form yc pl20 pr20" id="login_after"> 
                       <div class="form-group">
                         <label class="col-sm-2 control-label pr0">原手机号码：</label>
                         <div class="col-sm-6 pl0">
@@ -128,8 +136,8 @@
                         <div class="col-sm-offset-2 col-sm-10 pl0 error_color yc">验证码有误</div>
                       </div>
                       
-                      <div class="form-group submit_box">
-                        <div class="col-sm-10 pl0">
+                      <div class="form-group submit_box ">
+                        <div class="col-sm-10 pl0 col-sm-offset-2">
                           <button type="button" class="btn btn-primary app">确定</button>  
                         </div>
                       </div>
@@ -139,7 +147,7 @@
             <div class="news_rightmian col-sm-10 fixpassword yc">
                 <div class="qkycadr">
                     <h3 class="news_title"><i class="qkyicon_mian mr5 fz_24">&#xe646;</i><span>修改密码</span></h3>
-                    <form class="form-horizontal accset_form"> 
+                    <form class="form-horizontal accset_form pl20 pr20"> 
                       <div class="form-group">
                         <label class="col-sm-2 control-label pr0">当前密码：</label>
                         <div class="col-sm-6 pl0">
@@ -151,14 +159,14 @@
                         <div class="col-sm-6 pl0">
                           <input type="text" class="form-control"  placeholder="请输入新密码" >
                         </div>
-                        <div class="col-sm-offset-2 col-sm-10 pl0 co_73 yc">密码由6-12个字符组成，区分大小写</div>
+                        <div class="col-sm-offset-2 col-sm-10 pl0 co_73">密码由6-12个字符组成，区分大小写</div>
                       </div>
                       <div class="form-group ">
                         <label class="col-sm-2 control-label pr0">确认新密码：</label>
                         <div class="col-sm-6 pl0">
                           <input type="text" class="form-control"  placeholder="请重新输入确定的新密码" >
                         </div>
-                        <div class="col-sm-offset-2 col-sm-10 pl0 co_73 yc">确保两次密码一致</div>
+                        <div class="col-sm-offset-2 col-sm-10 pl0 co_73">确保两次密码一致</div>
                       </div>
                       <div class="form-group pb20">
                         <label class="col-sm-2 control-label pr0">密码强度：</label>
@@ -172,8 +180,8 @@
                       </div>
                       
                       <div class="form-group submit_box">
-                        <div class="col-sm-10 pl0">
-                          <button type="button" class="btn btn-primary app">确定</button>  
+                        <div class="col-sm-6 pl0 col-sm-offset-2">
+                          <button type="button" class="btn btn-primary app ">确定</button>  
                         </div>
                       </div>
                     </form>
@@ -231,7 +239,7 @@
 			"navli":[]
 		 });
 		 aset.settings_run();
-		 rach.radio_run(function(){});
+		 
 		 
 		 $('.image-editor').cropit({
 			width:200,

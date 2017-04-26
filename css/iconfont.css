@@ -25,11 +25,11 @@
 
 @font-face {
   font-family: 'qkyicon_20';  /* project id 202495 */
-  src: url('../iconfont/20/iconfont.eot'); /* IE9*/
-  src: url('../iconfont/20/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../iconfont/20/iconfont.woff') format('woff'), /* chrome, firefox */
-  url('../iconfont/20/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../iconfont/20/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('//at.alicdn.com/t/font_9m6l4h3bz1rod2t9.eot');
+  src: url('//at.alicdn.com/t/font_9m6l4h3bz1rod2t9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_9m6l4h3bz1rod2t9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_9m6l4h3bz1rod2t9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_9m6l4h3bz1rod2t9.svg#iconfont') format('svg');
 }
 
 @font-face {

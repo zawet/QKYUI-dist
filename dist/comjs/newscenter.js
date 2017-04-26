@@ -13,7 +13,7 @@ define(function(require,exports) {
 	//暴露的执行函数
 	exports.newscenter_run=function(){
 		//获取消息并渲染
-		var newsdata=qkydata.news_analogdata;
+		var newsdata=opts.news_analogdata;
 		for(var i=0;i<newsdata.length;i++){
 			var appicon=getpy.getpy(newsdata[i].appname);//获取应用名的拼音
 			if($.inArray(appicon,qkydata.haveicon)!=-1){//判断是否有图标了，有的话就加上图标，没有就显示默认app图标
