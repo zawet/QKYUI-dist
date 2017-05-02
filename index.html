@@ -145,15 +145,71 @@
                      <a class="fr">办理></a>
                      <span class="fr mr10">2017.03.25 13:32</span>
                  </li>
+                 <li class="clear">
+                     <label class="fl">办公室主任外出调研</label>
+                     <a class="btn btn-default btn-sm fl ml10">待办流程</a>
+                     <a class="fr">办理></a>
+                     <span class="fr mr10">2017.03.25 13:32</span>
+                 </li>
                  </ul>
              </div>
              <div class="mb15 write_cadr">
                  <textarea class="form-control" rows="4" placeholder="想说点什么"></textarea>
                  <div class="write_bar clear pt5">
                      <a class="btn btn-onlytxt fl pl0 pr20"><i class="qkyicon_mian  mr5">&#xe642;</i>表情</a>
-                     <a class="btn btn-onlytxt fl pl0 pr20"><i class="qkyicon_mian  mr5">&#xe648;</i>图片</a>
-                     <a class="btn btn-onlytxt fl pl0 pr20"><i class="qkyicon_mian  mr5">&#xe64b;</i>视频</a>
-                     <a class="btn btn-onlytxt fl pl0 pr20"><i class="qkyicon_14  mr5">&#xe603;</i>文档</a>
+                     <a class="btn btn-onlytxt fl pl0 pr20 po_r">
+                     <span class="minipop_btn"><i class="qkyicon_mian  mr5">&#xe648;</i>图片</span>
+                     <div class="minipop_box">
+                     	<div class="minipop_triangle"></div>
+                     	<div class="minipop_body qkycadr t_l">
+                        	<div class="minipop_header clear">上传图片<i class="minipop_close qkyicon_14 fr ">&#xe618;</i></div>
+                            <div class="co_73 mt15 mb10">共4张，还能上传5张</div>
+                            <div class="photo_ul clear">
+                                <span class="photo_li po_r">
+                                    <i class="qkyicon_14 po_ab_r">&#xe618;</i>
+                                    <img src="images/tx01.png">
+                                </span>
+                                <span class="photo_li po_r">
+                                    <i class="qkyicon_14 po_ab_r">&#xe618;</i>
+                                    <img src="images/tx01.png">
+                                </span>
+                                <span class="photo_li po_r">
+                                    <i class="qkyicon_14 po_ab_r">&#xe618;</i>
+                                    <img src="images/tx01.png">
+                                </span>
+                                <span class="photo_li po_r">
+                                    <i class="qkyicon_14 po_ab_r">&#xe618;</i>
+                                    <img src="images/tx01.png">
+                                </span>
+                                <span class="photo_li add t_c po_r">
+                                    <i class="qkyicon_14 fz_30">&#xe616;</i>
+                                    <input type="file" class="ycfile">
+                                </span>
+                            </div>
+                        </div>
+                     </div>
+                     </a>
+                     <a class="btn btn-onlytxt fl pl0 pr20 po_r">
+                     <span class="minipop_btn"><i class="qkyicon_mian  mr5">&#xe64b;</i>视频</span>
+                     <div class="minipop_box">
+                     	<div class="minipop_triangle"></div>
+                     	<div class="minipop_body qkycadr t_l">
+                        	<div class="minipop_header clear">上传视频<i class="minipop_close qkyicon_14 fr ">&#xe618;</i></div>
+                            
+                        </div>
+                     </div>
+                     
+                     </a>
+                     <a class="btn btn-onlytxt fl pl0 pr20 po_r">
+                     <span class="minipop_btn"><i class="qkyicon_14  mr5">&#xe603;</i>文档</span>
+                     <div class="minipop_box">
+                     	<div class="minipop_triangle"></div>
+                     	<div class="minipop_body qkycadr t_l">
+                        	<div class="minipop_header clear">上传文档<i class="minipop_close qkyicon_14 fr ">&#xe618;</i></div>
+                            
+                        </div>
+                     </div>
+                     </a>
                      <a class="btn btn-primary fr ml15">发表说说</a>
                      <div class="dropdown qkydropdown havechoose fr">
                         <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
@@ -362,6 +418,7 @@
     </div>
     
     <div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+    
     <div class="modal fade" id="upfile" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -377,7 +434,7 @@
             <div class="nav_tabs_mian local qkycadr">
                 <div class="t_c pt20 pb20 mt20">
                     <a class="btn btn-primary btn-lg app_background po_r"><i class="qkyicon_14 mr10 fz_16">&#xe616;</i>选择文件<input type="file" class="ycfile"></a>
-                    <div class="co_73 t_c">最大上传文件大小2GB</div>
+                    <div class="co_73 t_c mt10">最大上传文件大小2GB</div>
                 </div>
                 <table class="table table-condensed bor_b">
                 <thead><tr><th colspan="4">资源名</th></tr></thead>
@@ -533,11 +590,20 @@
 		 $("#qkynav").qkynav();//没消息的时候
 		 /*$("#qkynav_inverse").qkynav({logosrc:"images/nav_logo/logo.png"});*/
 		 rach.rach_run(function(t){},function(t){});
-		 $(".nav-tabs li").on("click",function(){
+		 $(".nav-tabs li,.nav-pills li").on("click",function(){
 		 	$(this).addClass("active").siblings().removeClass("active"); 
 			$(".nav_tabs_mian").addClass("yc");
 			$(".nav_tabs_mian."+$(this).attr("toshow")).removeClass("yc");
 		 });
+		 
+		 $(".minipop_btn").on("click",function(){
+			$(this).parent().siblings().find(".minipop_box").slideUp(100);
+		 	$(this).next(".minipop_box").slideToggle(200);
+		 });
+		 $(".minipop_close").on("click",function(){
+		 	$(this).parents(".minipop_box").slideUp(200);
+		 });
+		 
 		 
 	});
     </script>
