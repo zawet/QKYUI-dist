@@ -18,7 +18,7 @@
 	.info_comapp ul li{ padding:5px 0 5px 10%; color:#535353; cursor:pointer;}
 	.info_comapp ul li:hover{ color:#333;}
 	
-	.newlist_ul{ list-style:none; margin:0; padding:0 10px; }
+	.newlist_ul{ list-style:none; margin:0; padding:0 10px; height:210px; overflow-y:auto;  }
 	.newlist_ul li{ line-height:25px; padding:5px 0;}
 	.newlist_ul li label{ margin:0; padding:0; font-weight:normal; color:#333;}
 	.newlist_ul li span{ color:#737373;}
