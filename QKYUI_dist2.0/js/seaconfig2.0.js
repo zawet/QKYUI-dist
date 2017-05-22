@@ -47,7 +47,7 @@ seajs.config({
 	htmlsrc:"../mould_html/qkynav2.0.html",//头部模板获取异步地址
 	logosrc:"../images/nav_logo/qky-logo.png",
 	pjname:"",
-	navli:[],
+	navli_j:[],
 	appcenter_link:"appcenter.html",//应用中心页面链
 	newscenter_link:"newscenter.html",//消息中心页面链接
 	otherli:[["切换身份","href='switch_user.html'"],["账户设置","href='account_settings.html'"],["个人设置","href='#'"],["退出","href='login.html'"]],

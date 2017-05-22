@@ -45,7 +45,7 @@ define({
 			["空间预约管理","href='#'"],["教师业务档案","href='#'"],
 			["校园服务岗","href='#'"]
 		],
-		appcenter_link:"#",//应用中心页面链接
+		appcenter_link:"default_html/appcenter.html",//应用中心页面链接
 		allapp:{//所有app
 			"教育管理":[["校园办公","href='#1'"],["校产管理","href='#2'"],["基础数据管理","href='#'"]],
 			"教育大数据":[["基础数据分析","href='#'"],["综合素质分析","href='#'"],["学业水平分析","href='#'"],["微校园使用分析","href='#2'"]],
@@ -66,11 +66,11 @@ define({
 		
 		isinfo:true,//是否支持登录显示个人信息
 		tea_info:{"name":"张晓明","isphoto":false,"photo":"images/tx01.png"},//个人信息
-		otherli:[["切换身份","href='#'"],["账户设置","href='#'"],["个人设置","href='#'"],["退出","href='#'"]],//设置菜单
+		otherli:[["切换身份","href='default_html/switch_user.html'"],["账户设置","href='default_html/account_settings.html'"],["个人设置","href='#'"],["退出","href='default_html/login.html'"]],//设置菜单
 
 		isnews:true,//是否显示信息铃铛
 		newsimgsrc:"images/appicon/",//应用图标的来源路径
-		newscenter_link:"#",//消息中心页面链接
+		newscenter_link:"default_html/newscenter.html",//消息中心页面链接
 		news_analogdata:[/*推送消息模拟数据*/
 			{
 				appname:"学习管理平台",

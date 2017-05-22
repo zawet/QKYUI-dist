@@ -228,11 +228,12 @@
   </div>
 </div>
     <!--模块化js-->
+    <script src="../js/jq/1.11.1/jquery.min.js"></script>
     <script src="../js/sea.js"></script>
     <script src="../js/seaconfig2.0.js"></script>
     
     <script>
-     seajs.use(["jq","bs","nav","aset","rach","dw","ci"],function(jq,bs,nav,aset,rach){
+     seajs.use(["bs","nav","aset","rach","dw","ci"],function(bs,nav,aset,rach){
 		 second_opts.pjname="账户设置";
 		 $("#qkynav").qkynav(second_opts); 
 		 aset.settings_run();

@@ -241,9 +241,9 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 /*二层主导航*/
 .second_level{ top:50px; background:#f5f5f5; z-index:1029;border-bottom:1px solid #d8d8d8; height:44px; min-height:auto;}
 .second_level .nav{ width:87%; }
-.second_level .nav a{ font-size:14px; color:#737373; padding-bottom:14px; border-bottom:2px solid #f5f5f5; cursor:pointer; padding:12px 15px 9px;height:43px;}
-.second_level .nav a:hover{ background:#eee;border-color:#eee;}
-.second_level .nav li.active a{ color:#333; border-bottom:2px solid #27b0f2; background:none;  }
+.second_level .nav a{ font-size:14px; color:#737373; padding-bottom:14px; border-bottom:2px solid #f5f5f5; cursor:pointer; padding:12px 15px 9px;height:43px;background:none !important;}
+.second_level .nav a:hover{ background:#eee !important;border-color:#eee;}
+.second_level .nav li.active a{ color:#333; border-bottom:2px solid #27b0f2; background:none !important;  }
 .second_level .add_navbar{ width:80%; float: left;display:none;}
 .second_level .add_navbar .btn{ padding:2px 0;}
 .second_level .add_navbar span{ font-size:16px; line-height:24px; height:24px; display:inline-block; margin:10px 20px;}
