@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="qky2.ico">
+    <title>全课云UI</title>
+    <!-- Bootstrap 基础样式 CSS -->
+    <link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+    <!--全课云基础样式覆盖-->
+    <link href="../css/iconfont2.0.css" rel="stylesheet">
+    <link href="../css/qkybase2.0.css" rel="stylesheet">
+    <link href="../css/quickcss2.0.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="qkybody">
+    <div class="navbar navbar-default navbar-fixed-top news" role="navigation" id="qkynav"></div>  
+    <div class="container mt15">
+        <div class="row mb15">
+            <div class="news_leftmian col-sm-2 pr0 qkycadr pt10 pb10 pl0">
+                <a class="news_leftli active" id="appnews"><span>应用消息</span></a>
+                <a class="news_leftli" id="newssetup"><span>消息设置</span></a>
+            </div>
+            <div class="news_rightmian col-sm-10 appnews">
+                <div class="qkycadr">
+                    <h3 class="news_title"><i class="qkyicon_mian mr5 fz_24">&#xe63c;</i><span>应用消息</span><span class="fz_14 co_73 ml10">共68条</span></h3>
+                    <div class="news_bar row">
+                        <div class="col-sm-2">
+                            <a class="btn btn-default disabled allnews_delete" data-toggle="modal" data-target="#deletenews"><i class="qkyicon_14 mr5">&#xe613;</i>删除</a>
+                        </div>
+                        <div class=" col-sm-4 col-sm-offset-1">
+                        <form class="form-horizontal">
+                          <div class="form-group mb0">
+                            <label for="inputEmail3" class="col-sm-4 control-label pr0">消息来源</label>
+                            <div class="col-sm-8">
+                              <div class="dropdown qkydropdown havechoose">
+                                <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown">
+                                 <span class="value">全部</span>
+                                 <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                 <li role="presentation"><a>选项1</a></li>
+                                 <li role="presentation"><a>选项2</a></li>
+                                 <li role="presentation"><a>选项3</a></li>
+                                </ul>
+                               </div>
+                            </div>
+                          </div>
+                        </form>
+                        </div>
+                        <div class="col-sm-3 col-sm-offset-2">
+                            <div class="seachApp ma0 wd90"><i class="qkyicon_mian">&#xe649;</i><input type="text" class="form-control" placeholder="搜索消息关键字"></div>
+                        </div>
+                    </div>
+                    <div class="news_list_bar checkbox ma0">
+                      <label class="checkbox-qky clear parent" lj="news_list" isc="no">
+                       <a class="checkbox_a fl"><i class="qkyicon_14">&#xe619;</i></a><span class="fl" id="choosenumber">全选</span>
+                      </label>
+                    </div>
+                    <div class="news_listbox"></div>
+                     <div class="qkypage mt20 mb20 page_center"> 
+                        <ul class="nav nav-pills"> 
+                         <li class="disabled page_prv"><a href="#">上一页</a></li>
+                         <li class="active"><a href="#">1</a></li>
+                         <li><a href="#">2</a></li>
+                         <li><a href="#">...</a></li>
+                         <li><a href="#">4</a></li>
+                         <li><a href="#">5</a></li>
+                         <li class="page_next"><a href="#">下一页</a></li>
+                         <li class="form-group mb0 page_input"><input type="text" class="form-control" placeholder="输入页面"></li>
+                         <li class="page_input"><a class="btn btn-default">GO</a></li>
+                        </ul>
+                     </div> 
+                </div>
+                <div class="t_c nodata qkycadr">
+                     <i class="qkyicon_mian fz_100 app_color">&#xe64f;</i>
+                     <div class="fz_16 co_33">暂时没有消息</div>
+                </div>
+            </div>
+            <div class="news_rightmian col-sm-10 newssetup yc">
+                <div class="qkycadr">
+                    <h3 class="news_title"><i class="qkyicon_mian mr5 fz_24">&#xe644;</i><span>消息设置</span></h3>
+                    <div class="pa20 co_73">在下方设置应用消息推送的开启和关闭，设置为关闭的应用将不再进行消息推送</div>
+                    <div class="newssetup_"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+    
+    
+    <!--待渲染的模板-->
+    <div class="yc" id="news_list_mould">
+        <div class="news_list clear">
+        <div class="news_list_li news_chbox">
+                               <label class="checkbox-qky mb0 child" lj="news_list"><a class="checkbox_a ma0"><i class="qkyicon_14">&#xe619;</i></a></label>
+                            </div>
+                            <div class="news_list_li news_icon">
+                               <div class="app_icon">APP</div>
+                            </div>
+                            <div class="news_list_li news_content">
+                                <div class="news_name">在线测试开放答题</div>
+                                <div class="news_times">2017-03-28 13:00</div>
+                                <div class="news_cont">课程西方近代史的测试第一阶段测试已于2017-03-28 13:00开放答题</div>
+                            </div>
+                            <div class="news_list_li news_other fr">
+                            	<div class="news_appname">学习管理平台</div>
+                                <i class="qkyicon_14 news_list_close" data-toggle="modal" data-target="#deletenews">&#xe613;</i>
+                            </div>                     
+        </div>
+    </div>
+    
+    <div class="yc" id="newssetup_box_mould">
+        <div class="newssetup_box">
+            <h4><i class="qkyicon_mian">&#xe63f;</i><a>教育管理</a></h4>
+            <div class="newssetup_ul"></div>  
+        </div>
+    </div>
+    <div class="yc" id="newssetup_li_mould">
+        <div class="newssetup_li clear">
+            <div class="news_list_li"><div class="app_icon">APP</div></div>
+            <div class="news_list_li newssetup_li_appname">校园办公</div>
+            <div class="news_list_li fr mt10">
+            	<div class="qky_switch trn"><div class="qky_switch_btn trn"></div></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Modal -->
+	<div class="modal fade" id="deletenews" tabindex="-1" role="dialog" aria-labelledby="deletenewsLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="deletenewsLabel">删除应用消息</h4>
+      </div>
+      <div class="modal-body modal_auto t_c fz_16">
+        确定要删除选中的应用消息么？
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary app">确定</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="../js/sea.js"></script>
+    <script src="../js/seaconfig2.0.js"></script>
+    <script>
+     seajs.use(["jq","bs","nav","news"],function(jq,bs,nav,news){
+		 second_opts.pjname="消息中心";
+		 $("#qkynav").qkynav(second_opts); 
+		 news.newscenter_run() 
+	});
+    </script>
+  </body>
+</html>

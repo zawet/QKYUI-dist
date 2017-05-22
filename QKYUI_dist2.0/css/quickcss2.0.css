@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+ * 快速样式提供
+ */
+.yc{ display:none;}
+.fl{ float:left !important;}
+.fr{ float:right !important;}
+.clear:before,.clear:after{ content: " "; display: table;}
+.clear:after {clear: both;}
+.po_r{ position:relative;}
+.po_ab{ position:absolute; top:0; left:0;}
+.po_ab_r{ position:absolute; top:0; right:0}
+.kuai{ display:block;}
+.kuai_line{ display:inline-block;}
+.box_b{ box-sizing:border-box;}/*块元素浮动算宽度时，忽略边框和内边距*/
+.dian3{ overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}/*单行文字超出显示...*/
+.ycfile{position: absolute;width: 100%;height: 100%;left: 0;top: 0;filter: alpha(opacity=0);opacity: 0;z-index: 66;cursor: pointer;}/*完全透明的上传控件*/
+.r90{transform:rotate(-90deg); -webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);}/*旋转90度  ie8以及以下没作用*/
+.r180{transform:rotate(-180deg); -webkit-transform:rotate(-180deg);-moz-transform:rotate(-180deg); display:inline-block;}
+.r180,.r90,.trn{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}/*过度执行动画  ie8以及以下没作用*/
+.height30{ height:30px; padding:4px 15px;}
+.height30_line{ height:30px; line-height:30px;}
+.height34{ height:34px; padding:6px 15px;}
+.height34_line{ height:34px; line-height:34px;}
+.t_c{ text-align:center !important;}
+.t_l{ text-align:left !important;}
+.t_r{ text-align:right !important;}
+.bor_nb{ border-bottom:none !important;}
+.bor_nt{ border-top:none !important;}
+.atd a:hover,.atd:hover{ text-decoration:inherit; cursor:pointer;}
+.wd100{ width:100%;}
+
+.co_a3{ color:#a3a3a3!important;}
+.co_93{ color:#939393!important;}
+.co_83{ color:#838383!important;}
+.co_73{ color:#737373!important;}
+.co_63{ color:#636363!important;}
+.co_53{ color:#535353!important;}
+.co_43{ color:#434343!important;}
+.co_33{ color:#333333!important;}
+
+.fz_we{ font-weight:bold!important;}
+.fz_nwe{ font-weight:normal!important;}
+.fz_12{ font-size:12px!important;}
+.fz_14{ font-size:14px!important;}
+.fz_16{ font-size:16px!important;}
+.fz_18{ font-size:18px!important;}
+.fz_20{ font-size:20px!important;}
+.fz_22{ font-size:22px!important;}
+.fz_24{ font-size:24px!important;}
+.fz_26{ font-size:26px!important;}
+.fz_28{ font-size:28px!important;}
+.fz_30{ font-size:30px!important;}
+.fz_40{ font-size:40px!important;}
+.fz_50{ font-size:50px!important;}
+.fz_60{ font-size:60px!important;}
+.fz_70{ font-size:70px!important;}
+.fz_80{ font-size:80px!important;}
+.fz_90{ font-size:90px!important;}
+.fz_100{ font-size:100px!important;}
+
+.mt0{ margin-top:0px!important;}
+.mt5{ margin-top:5px!important;}
+.mt8{ margin-top:8px!important;}
+.mt10{ margin-top:10px!important;}
+.mt15{ margin-top:15px!important;}
+.mt20{ margin-top:20px!important;}
+.mb0{ margin-bottom:0px!important;}
+.mb5{ margin-bottom:5px!important;}
+.mb8{ margin-bottom:8px!important;}
+.mb10{ margin-bottom:10px!important;}
+.mb15{ margin-bottom:15px!important;}
+.mb20{ margin-bottom:20px!important;}
+.ml0{ margin-left:0px!important;}
+.ml5{ margin-left:5px!important;}
+.ml8{ margin-left:8px!important;}
+.ml10{ margin-left:10px!important;}
+.ml15{ margin-left:15px!important;}
+.ml20{ margin-left:20px!important;}
+.mr0{ margin-right:0px!important;}
+.mr5{ margin-right:5px!important;}
+.mr8{ margin-right:8px!important;}
+.mr10{ margin-right:10px!important;}
+.mr15{ margin-right:15px!important;}
+.mr20{ margin-right:20px!important;}
+.ma0{ margin:0!important;}
+.ma5{ margin:5px!important;}
+.ma10{ margin:10px!important;}
+.ma15{ margin:15px!important;}
+.ma20{ margin:20px!important;}
+
+
+.pt0{ padding-top:0px!important;}
+.pt5{ padding-top:5px!important;}
+.pt10{ padding-top:10px!important;}
+.pt15{ padding-top:15px!important;}
+.pt20{ padding-top:20px!important;}
+.pb0{ padding-bottom:0px!important;}
+.pb5{ padding-bottom:5px!important;}
+.pb10{ padding-bottom:10px!important;}
+.pb15{ padding-bottom:15px!important;}
+.pb20{ padding-bottom:20px!important;}
+.pl0{ padding-left:0px!important;}
+.pl5{ padding-left:5px!important;}
+.pl10{ padding-left:10px!important;}
+.pl15{ padding-left:15px!important;}
+.pl20{ padding-left:20px!important;}
+.pr0{ padding-right:0px!important;}
+.pr5{ padding-right:5px!important;}
+.pr10{ padding-right:10px!important;}
+.pr15{ padding-right:15px!important;}
+.pr20{ padding-right:20px!important;}
+.pa0{ padding:0!important;}
+.pa5{ padding:5px!important;}
+.pa10{ padding:10px!important;}
+.pa15{ padding:15px!important;}
+.pa20{ padding:20px!important;}

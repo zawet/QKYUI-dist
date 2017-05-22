@@ -1,0 +1,163 @@
+<div class="container-fluid po_r">
+    <div class="nav_box clear fl">
+        <a class="navbtn fl"><i class="qkyicon_mian fz_18">&#xe63a;</i></a>	
+        <div class="nav_logo"><img src="" alt="" ></div>
+        <div class="navline"></div>
+        <div class="nav_pjname"></div>
+        <button type="button" class="navbar-toggle collapsed mr0" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <ul class="nav_other yc">
+        <li class="nav_news_box">
+            <a class="nav_news_icon"><i class="qkyicon_mian fz_18">&#xe63c;</i><span class="nav_news_badge badge">99</span></a>
+            <div class="nav_news_popup">
+            	<div class="scrrol_box">
+                <div class="nav_news_libox"></div>
+                <a class="nav_allnaws_check" href="newscenter.html">查看所有应用消息</a>
+                </div>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle clear other_sel" data-toggle="dropdown">
+                <div class="user_photo fl"><i class="qkyicon_mian">&#xe642;</i></div>
+                <span class="fl other_name"></span>
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" id="otherli"></ul>
+        </li>
+    </ul>
+    
+    <div id="navbar" class="navbar-collapse collapse">
+    	<ul class="nav navbar-nav"></ul>
+    </div>
+    <div class="nav_more row">
+        <div class="nav_more_left col-xs-3">
+            <div class="nav_more_lli">
+                    <h5><i class="qkyicon_mian mr5">&#xe640;</i><span>最近访问</span></h5>
+                    <div class="li_a clear" id="lately"></div>
+            </div>
+            <div class="nav_more_lli">
+                    <h5 class="clear"><i class="qkyicon_mian mr5">&#xe643;</i><span>常用应用</span><a class="setup fr">设置</a>
+                    <!--<a class="setup fr" data-toggle="modal" data-target="#comapp_setup">设置</a>--></h5>
+                    <div class="li_a clear" id="common"></div>
+            </div>
+        </div>
+        <a class="appCenter clear  col-xs-3" href="appcenter.html"><i class="qkyicon_mian fl mr5 app">&#xe63e;</i><span class="fl">应用中心</span><i class="qkyicon_mian fr fz_12">&#xe641;</i></a>
+        <div class="navline"></div>
+        <div class="nav_more_right col-xs-9 clear" id="allapp">
+        	<div class="nav_more_havedata">
+                <div class="seachApp">
+                  <i class="qkyicon_mian">&#xe649;</i>
+                  <input type="text" class="form-control" placeholder="搜索应用" id="seachapp_inp">
+                </div>
+                <div class="clear scroll_box">
+                    <div class="row_left"></div>
+                    <div class="row_right"></div>
+                </div>
+                <div class="seachApp_showbox"><!--搜索显示-->
+                    <div class="nav_more_lli yc">
+                        <h5 class="co_73 clear"><span>搜索到<span id="seachapp_num">5</span>条结果</span><i class="qkyicon_14 fr">&#xe618;</i></h5>
+                        <div class="li_a clear" id="seachapp_over">
+                        </div>
+                    </div>
+                    <div class="t_c nodata yc">
+                    <i class="qkyicon_mian fz_50 app_color">&#xe64c;</i>
+                    <div class="fz_14 co_73">没找到相关内容</div>
+                    </div> 
+                </div>
+            </div>
+            <div class="nav_more_nodata t_c nodata">
+            <i class="qkyicon_mian fz_60">&#xe64c;</i>
+            <div class="fz_14 co_73">暂无应用</div>
+            </div> 
+        </div> 
+    </div>
+</div>
+
+<div class="yc" id="nav_news_li_mould"><!--消息列表模板-->
+    <div class="nav_news_li clear">
+        <div class="nav_news_appicon fl"><div class="app_icon">APP</div></div>
+        <div class="nav_news_info fl">
+            <div class="clear">
+                <div class="fl nav_news_txt"><label class="nav_news_name"></label><span class="nav_news_times"></span></div>
+                <div class="fr nav_news_appname"></div>
+            </div>
+            <div class="nav_news_cont"></div>
+        </div>
+    </div>
+</div>
+
+<div class="yc" id="nav_more_lli_mould"><!--全部app模板-->
+    <div class="nav_more_lli fl">
+        <h5><i class="qkyicon_mian mr5">&#xe63f;</i><span></span></h5>
+        <div class="li_a clear"></div>
+    </div>
+</div>
+
+
+<div class="yc" id="modal_mould"><!--设置弹窗-->
+<div class="modal fade" id="comapp_setup" tabindex="-1" role="dialog" aria-labelledby="comapp_setupLabel">
+          <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="comapp_setupLabel">设置常用应用</h4>
+              </div>
+              <div class="modal-body modal_auto">
+                <div class="setup_box clear">
+                
+                    <div class="setup_cont">
+                        <div class="setup_title">所有应用（36）</div>
+                        <div class="setup_ul">
+                            <div class="setup_list">
+                            <div class="setup_list_">
+                            	<div class="seachApp wd90">
+                                  <i class="qkyicon_mian">&#xe649;</i>
+                                  <input type="text" class="form-control" placeholder="搜索应用">
+                                </div>
+                                
+                                <a>校园办公</a>
+                                <a>校产管理</a>
+                                <a>课务管理</a>
+                                <a>宿舍管理</a>
+                                <a>基础数据分析</a>
+                                <a>成绩管理</a>
+                                <a>电子班牌</a>
+                            </div>   
+                            </div>
+                        </div>   
+                    </div>
+                    
+                    <div class="setup_cont_min">
+                    <i class="qkyicon_mian">&#xe639;</i>
+                    </div>
+                    
+                    <div class="setup_cont right">
+                    	<div class="setup_title">常用应用（4）</div>
+                        <div class="setup_ul">
+                            <div class="setup_list">
+                            <div class="setup_list_">
+                                <a class="clear">电子图书馆 <i class="qkyicon_mian close fr">&#xe63b;</i></a>
+                                <a class="clear">校友家园 <i class="qkyicon_mian close fr">&#xe63b;</i></a>
+                                <a class="clear">考勤管理 <i class="qkyicon_mian close fr">&#xe63b;</i></a>
+                                <a class="clear">考勤管理 <i class="qkyicon_mian close fr">&#xe63b;</i></a>
+                                <a class="clear">一卡通 <i class="qkyicon_mian close fr">&#xe63b;</i></a>
+                            </div>
+                            </div>
+                        </div>        
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary app">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>

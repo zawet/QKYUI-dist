@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="qky2.ico">
+    <title>全课云UI_头部插件</title>
+    
+    <link href="js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+    <link href="css/qkyheard.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="navbar navbar-default navbar-fixed-top headernav" id="qkynav"></div>
+<!--模块化js-->
+    <script src="js/sea.js"></script>
+    <script src="js/seaconfig2.0.js"></script>
+    <script>
+     seajs.use(["jq","bs","nav"],function(j,b,n){
+		 $("#qkynav").qkynav();//没消息的时候 
+	});
+    </script>
+</body>
+</html>

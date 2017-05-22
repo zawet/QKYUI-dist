@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="qky2.ico">
+    <title>全课云UI登陆页</title>
+    <!-- Bootstrap 基础样式 CSS -->
+    <link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+    <!--全课云基础样式覆盖-->
+    <link href="../css/iconfont2.0.css" rel="stylesheet">
+    <link href="../css/qkybase2.0.css" rel="stylesheet">
+    <link href="../css/quickcss2.0.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="qkybody">
+<!--    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="qkynav"></div>-->
+
+    					<div class="login_box bgfluid">
+                                <div class="login_mian juzhong">
+                                    <div class="login_logo"><img src="../images/nav_logo/qky-logo.png"></div>
+                                    <div class="login_body">
+                                        <div class="h4 mb20">登录</div>
+                                        <form>
+                                        <div class="input-group mb10">
+                                          <span class="input-group-addon"><i class="qkyicon_14">&#xe64f;</i></span>
+                                          <input type="text" class="form-control" placeholder="请输入用户名">
+                                          <div class="po_ab_r height30_line error_color zindex pr15 yc">账号有误</div>
+                                        </div>
+                                        <div class="input-group mb10">
+                                          <span class="input-group-addon"><i class="qkyicon_14">&#xe602;</i></span>
+                                          <input type="password" class="form-control"value="请输入密码">
+                                          <div class="po_ab_r height30_line error_color zindex pr15 yc">密码有误</div>
+                                        </div>
+                                        <div class="input-group mb0 wd100">
+                                            <div class="col-xs-9 pl0">
+                                                <div class="input-group mb0">
+                                                  <span class="input-group-addon"><i class="qkyicon_14">&#xe60b;</i></span>
+                                                  <input type="text" class="form-control" placeholder="请输入验证码">
+                                                  <div class="po_ab_r height30_line error_color zindex pr15 yc">验证码有误</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3 t_r">
+                                            	<img src="../images/yzm.jpg" height="30">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row pt10">
+                                           <div class=" col-xs-6 checkbox mt0 mb0">
+                                            <label class="checkbox-qky clear select pl0">
+                                            <a class="checkbox_a fl"><i class="qkyicon_14">&#xe619;</i></a><span class="fl">记住密码</span>
+                                            </label>
+                                           </div>
+                                           <div class="col-xs-6 t_r"><a class="btn btn-link pr0">点击刷新验证码</a></div>
+                                          </div>
+                                            <a class="btn btn-primary wd100 btn-lg app_background" data-toggle="modal" data-target="#login_error">登录</a>
+                                        <div class="row pt10 pb20">
+                                          <div class="col-xs-6 login_oth">
+                                           <span>第三方登录</span>
+                                           <a><img src="../images/wxicon.png"></a>
+                                           <a><img src="../images/qqicon.png"></a>
+                                           <a><img src="../images/xlicon.png"></a>
+                                          </div>
+                                          <div class="col-xs-6 t_r login_opt"><a class="btn btn-link one">注册账户</a><a class="btn btn-link" href="reset_password.html">找回密码</a></div>
+                                          </div>
+                                        
+                                        
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+<!--    <div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>-->
+
+<div class="modal fade in" tabindex="-1" role="dialog" id="login_error" aria-hidden="false"><div class="modal-backdrop fade in"></div>
+    <div class="modal-dialog modal-xs" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">登录失败</h4>
+            </div>
+            <div class="modal-body modal_auto t_c error_color">账号或密码错误，请重新输入</div>
+            <div class="modal-footer"> 
+            <button type="button" class="btn btn-primary" id="okeybtn">确定</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--模块化js-->
+    <script src="../js/sea.js"></script>
+    <script src="../js/seaconfig2.0.js"></script>
+    <script>
+     seajs.use(["jq","bs","nav","rach"],function(j,b,n,rach){
+		 rach.checkbox_run(function(i){});
+		 //$("#qkynav").qkynav({navli_active:-1,news_analogdata:""});
+	});
+    </script>
+  </body>
+</html>
