@@ -507,11 +507,11 @@
             <hr class="ma0">
             <div class="row mt10 mb10">
                 <label class="col-sm-2 pr0 pl0 mt5 t_r fz_nwe">始末时间：</label>
-                <div class="col-sm-4 po_r qkycalendar_box default s">
+                <div class="col-sm-4 po_r qkycalendar_box default">
                     <input type="text" class="form-control qkycalendar_btn"  placeholder="开始时间 yy-mm-dd"> 
                     
                 </div>
-                <div class="col-sm-4 po_r qkycalendar_box default e">
+                <div class="col-sm-4 po_r qkycalendar_box default">
                     <input type="text" class="form-control qkycalendar_btn"  placeholder="结束时间  yy-mm-dd" > 
                     
                 </div>
@@ -519,11 +519,11 @@
             
             <div class="row mt10 mb10">
                 <label class="col-sm-2 pr0 pl0 mt5 t_r fz_nwe">始末时间(带时分秒)：</label>
-                <div class="col-sm-4 po_r qkycalendar_box box_hms s">
+                <div class="col-sm-4 po_r qkycalendar_box box_hms">
                     <input type="text" class="form-control qkycalendar_btn"  placeholder="开始时间 yy-mm-dd hh:mm:ss"> 
                     
                 </div>
-                <div class="col-sm-4 po_r qkycalendar_box box_hms e">
+                <div class="col-sm-4 po_r qkycalendar_box box_hms">
                     <input type="text" class="form-control qkycalendar_btn "  placeholder="结束时间  yy-mm-dd hh:mm:ss" > 
                     
                 </div>
@@ -853,7 +853,7 @@
 		 	$(this).parents(".minipop_box").slideUp(200);
 		 }); 
 		 
-		 //日历调用(多个日期同时使用时，每配置一个参数，其他日期调用也需要重新初始化此参数)
+		 //日历调用
 		qkycal.qkycalendar({boxid:".qkycalendar_box.default"});
 		qkycal.qkycalendar({boxid:".qkycalendar_box.box_hms",isshowtime:"hms"});
 	    qkycal.qkycalendar({boxid:".qkycalendar_box.box_hm",isshowtime:"hm"});
