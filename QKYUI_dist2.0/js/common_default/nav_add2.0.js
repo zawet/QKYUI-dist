@@ -16,8 +16,8 @@ define(function(require) {
 	var appname=[];var apphref=[];//缓存所有应用名字/应用跳转
 	var navmuchhtml=
 	'<li class="dropdown">'+
-        '<a href="#" class="dropdown-toggle clear" data-toggle="dropdown">'+
-        '<span class="fl">更多</span>'+
+        '<a href="#" class="dropdown-toggle" data-toggle="dropdown">'+
+        '<span>更多</span>'+
         '<span class="caret"></span>'+
         '</a>'+
         '<ul class="dropdown-menu maxh" role="menu" id="navmuchli"></ul>'+

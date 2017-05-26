@@ -1,10 +1,26 @@
-
-    <div class="row ml0 mr0">
+<div class="qkycalendar">
+    <div class="row ml0 mr0 ymd_box">
         <div class="qkycalendar_day col-sm-4"><label>15</label><span>星期三</span></div>
-        <div class="qkycalendar_years col-sm-8">
-            <a  class="qkycalendar_chooose_button perv"><i class="qkyicon_14">&#xe604;</i></a>
-            <p><span class="year">2017</span>年<span class="moon">3</span>月</p>
-            <a  class="qkycalendar_chooose_button next"><i class="qkyicon_14">&#xe6b3;</i></a>
+        <div class="qkycalendar_years col-sm-8 clear">
+            <!--<a  class="qkycalendar_chooose_button perv"><i class="qkyicon_14">&#xe604;</i></a>-->
+            <div class="times_control fl">
+            <input class="time_val year" value="2017" onKeyUp="if(this.value.length>4){this.value=this.value.substr(0,4)};this.value=this.value.replace(/[^\d]/g,'');">
+            <span class="time_chooseicon" level="1" min="1970" max="3000">
+                <i class="qkyicon_14 timeup">&#xe67d;</i>
+                <i class="qkyicon_14 timedown fz_12">&#xe617;</i>
+            </span>
+            </div>
+            <span class="fl">年</span>
+            
+            <div class="times_control fl" style="width:25%">
+            <input class="time_val moon" value="5" onKeyUp="if(this.value.length>2){this.value=this.value.substr(0,2)};this.value=this.value.replace(/[^\d]/g,'');">
+            <span class="time_chooseicon" level="1" min="1" max="12">
+                <i class="qkyicon_14 timeup">&#xe67d;</i>
+                <i class="qkyicon_14 timedown fz_12">&#xe617;</i>
+            </span>
+            </div>
+            <span class="fl">月</span> 
+            <!--<a  class="qkycalendar_chooose_button next"><i class="qkyicon_14">&#xe6b3;</i></a>-->
         </div>
     </div>
                             
@@ -67,3 +83,4 @@
     </div>
     
     <div class="qkycalendar_ondate t_c"></div>
+    </div>

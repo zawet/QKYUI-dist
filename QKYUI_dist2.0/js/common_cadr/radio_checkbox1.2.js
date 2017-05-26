@@ -39,12 +39,15 @@ define(function(require,exports) {
 				}
 			}
 		});
+		
+		exports.radio_run(rafun);
+		exports.checkbox_run(chfun);
+		
 		//复选子类全没选和全选中后，父类改变样式
 		$(".checkbox-qky.child").on("click",function(){
 			child_in_parent($(this));
 		});
-		exports.radio_run(rafun);
-		exports.checkbox_run(chfun);
+		
 	}
 	//exports.rach_run();
 	

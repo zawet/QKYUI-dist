@@ -438,7 +438,7 @@
         </div>
         
         <div class="qkycadr  table-responsive bor_nb mb20">
-            <div class=" pa15 t_c fz_16">带复选的表格演示</div>
+            <div class=" pa15 t_c fz_16">带复选的表格演示<br/>(需要自行调用"rach"组件js模块，然后执行"rach_run(function(t){},function(t){})"函数，回调两个函数，分别是单选/复选点击后再执行)</div>
             <hr class="ma0">
             <table class="table table-condensed atd bor_b">
                  <thead>
@@ -503,29 +503,29 @@
         </div>
         
         <div class="qkycadr mb20">
-        	<div class=" pa15 t_c fz_16">自主编写的日历插件 qky_calendar</div>
+        	<div class=" pa15 t_c fz_16"><span class="fz_16 height30_line fz_we">自主编写的日历插件 qky_calendar演示</span></div>
             <hr class="ma0">
             <div class="row mt10 mb10">
                 <label class="col-sm-2 pr0 pl0 mt5 t_r fz_nwe">始末时间：</label>
-                <div class="col-sm-4 po_r qkycalendar_box default">
+                <div class="col-sm-4 po_r qkycalendar_box default s">
                     <input type="text" class="form-control qkycalendar_btn"  placeholder="开始时间 yy-mm-dd"> 
-                    <div class="qkycalendar po_leftup ml15"></div>
+                    
                 </div>
-                <div class="col-sm-4 po_r qkycalendar_box default">
+                <div class="col-sm-4 po_r qkycalendar_box default e">
                     <input type="text" class="form-control qkycalendar_btn"  placeholder="结束时间  yy-mm-dd" > 
-                    <div class="qkycalendar po_leftup ml15"></div>
+                    
                 </div>
             </div>
             
             <div class="row mt10 mb10">
                 <label class="col-sm-2 pr0 pl0 mt5 t_r fz_nwe">始末时间(带时分秒)：</label>
-                <div class="col-sm-4 po_r qkycalendar_box box_hms">
-                    <input type="text" class="form-control qkycalendar_btn "  placeholder="开始时间 yy-mm-dd hh:mm:ss"> 
-                    <div class="qkycalendar po_leftup ml15 "></div>
+                <div class="col-sm-4 po_r qkycalendar_box box_hms s">
+                    <input type="text" class="form-control qkycalendar_btn"  placeholder="开始时间 yy-mm-dd hh:mm:ss"> 
+                    
                 </div>
-                <div class="col-sm-4 po_r qkycalendar_box box_hms">
+                <div class="col-sm-4 po_r qkycalendar_box box_hms e">
                     <input type="text" class="form-control qkycalendar_btn "  placeholder="结束时间  yy-mm-dd hh:mm:ss" > 
-                    <div class="qkycalendar po_leftup ml15"></div>
+                    
                 </div>
             </div>
             
@@ -533,42 +533,134 @@
                 <label class="col-sm-2 pr0 pl0 mt5 t_r fz_nwe">始末时间（带时分）：</label>
                 <div class="col-sm-4 po_r qkycalendar_box box_hm">
                     <input type="text" class="form-control qkycalendar_btn"  placeholder="开始时间 yy-mm-dd  hh:mm"> 
-                    <div class="qkycalendar po_leftup ml15"></div>
+                    
                 </div>
                 <div class="col-sm-4 po_r qkycalendar_box box_hm">
                     <input type="text" class="form-control qkycalendar_btn"  placeholder="结束时间  yy-mm-dd  hh:mm" > 
-                    <div class="qkycalendar po_leftup ml15"></div>
+                    
                 </div>
             </div>
-            
+            <div class="pl20 pr20">
+            <div class="error_color t_c qkycadr pa15 ba_f5">以上的双日期的，因为要考虑时分秒的判定，所以业务逻辑会比较复杂，于是暂时还没开发出开始日期限制结束日期的选择。<br/>但年月日的判定接口已经留下，等待后续更新开发</div>
+            </div>
             <div class="row mt10 mb10">
                 <label class="col-sm-2 pr0 pl0 mt5 t_r fz_nwe">初始化输入框的日期：</label>
                 <div class="col-sm-8 po_r qkycalendar_box dist">
                     <input type="text" class="form-control qkycalendar_btn" value="2017-5-20"> 
-                    <div class="qkycalendar po_leftup ml15"></div>
+                    
                 </div>
             </div>
             <div class="row mt10 mb10">
                 <label class="col-sm-2 pr0 pl0 mt5 t_r fz_nwe">初始化输入框的日期：</label>
                 <div class="col-sm-8 po_r qkycalendar_box dist_hms">
                     <input type="text" class="form-control qkycalendar_btn" value="2017-5-20 13:14:33"> 
-                    <div class="qkycalendar po_leftup ml15"></div>
+                    
                 </div>
             </div>
             <div class="row mt10 mb10">
                 <label class="col-sm-2 pr0 pl0 mt5 t_r fz_nwe">初始化输入框的日期：</label>
                 <div class="col-sm-8 po_r qkycalendar_box dist_hm">
                     <input type="text" class="form-control qkycalendar_btn" value="2017-5-20 13:14"> 
-                    <div class="qkycalendar po_leftup ml15"></div>
+                    
                 </div>
             </div>
-            <!--<div class="row mt10 mb10">
+            <div class="row mt10 mb10">
                 <label class="col-sm-2 pr0 pl0 mt5 t_r fz_nwe">纯时分秒：</label>
                 <div class="col-sm-8 po_r qkycalendar_box only_hms">
-                    <input type="text" class="form-control qkycalendar_btn onlyhms"> 
-                    <div class="qkycalendar po_leftup ml15"></div>
+                    <input type="text" class="form-control qkycalendar_btn"> 
                 </div>
-            </div>-->
+            </div>
+            <div class="row mt10 mb10">
+                <label class="col-sm-2 pr0 pl0 mt5 t_r fz_nwe">纯时分：</label>
+                <div class="col-sm-8 po_r qkycalendar_box only_hm">
+                    <input type="text" class="form-control qkycalendar_btn"> 
+                </div>
+            </div>
+            <div class="row mt10 mb10">
+                <label class="col-sm-2 pr0 pl0 mt5 t_r fz_nwe">纯年月：</label>
+                <div class="col-sm-8 po_r qkycalendar_box only_ym">
+                    <input type="text" class="form-control qkycalendar_btn"> 
+                </div>
+            </div>
+            
+            <div class="row mt10 mb10">
+                <label class="col-sm-2 pr0 pl0 mt5 t_r fz_nwe">过去日子无法操作：</label>
+                <div class="col-sm-8 po_r qkycalendar_box oldday_none">
+                    <input type="text" class="form-control qkycalendar_btn"> 
+                </div>
+                <div class="col-sm-8 col-sm-offset-2 error_color">目前只支持年月日的控制，不能支持到时分秒过去都不操作</div>
+                
+            </div>
+            
+            <hr class="ma0">
+            <div class=" pa15 t_c fz_16 fz_we">日历插件 qky_calendar使用说明</div>
+            <hr class="ma0">
+            <div class="pa15">
+            <span class="kuai height30_line">1.目前需要依赖<code>jquery</code>,<code>bootstrap(只需要css)</code>,<code>quickcss</code>)</span>
+            <span class="kuai height30_line">2.需要调用插件"qky_calendar"，整个插件体放在<code>js/plug-in/qky_calendar(2.0版本)</code></span>
+            <span class="kuai height30_line">3.seajs目前邦好根层调用的路径，其他路径调用请重新绑定链接</span>
+            <span class="kuai">4.在引用了插件后，进行函数调用<code>库名.qkycalendar({opt})</code>，opt参数如下表格，boxid是首选要绑定的，其他的按需使用，调用例子<code>qkycal.qkycalendar({boxid:".qkycalendar_box.default"});</code>
+            </span>
+            <span class="kuai height30_line">5.日历插件参数表</span>
+            
+            <table class="table table-condensed table-bordered">
+            <thead><tr><th colspan="3">基础配置</th></tr></thead>
+            <thead><tr><th width="16%">参数名</th><th width="24%">默认值</th><th width="60%">作用</th></tr></thead>
+            <tbody>
+            <tr><td>ajaxsrc</td><td>按照从哪调用进行引用</td><td>//日历主体html异步地址</td></tr>
+            <tr><td>csssrc</td><td>按照从哪调用进行引用</td><td>//css调用地址//为之后的主题更换留接口</td></tr>
+            <tr><td>position</td><td>"po_leftup,ml15"</td><td>//在哪里展出<br/>默认右下（css直接锁定了）展出，<br/>值："po_leftup（左上）,po_leftdown（左下）,po_rightup（右上）"<br/> 可以另加内外边距的快速css，比如"po_leftup,ml15", &nbsp;用，号分割;</td></tr>
+            <tr><td>boxid</td><td>".qkycalendar_box"</td><td>//日历盒子id或者class</td></tr>
+            <tr><td>drawid</td><td>".qkycalendar"</td><td>//日历渲染id或者class</td></tr>
+            <tr><td>cilckid</td><td>".qkycalendar_btn"</td><td>//日历点击id或者class</td></tr>
+            <tr><td>hoverid</td><td>".qkycalendar_btn_hover"</td><td>//日历滑动id或者class(跟点击id只能二选一，要不点击要不悬停)</td></tr>
+            </tbody>
+            </table>
+            
+            <table class="table table-condensed table-bordered">
+            <thead><tr><th colspan="3">基础配置日期时间，不覆盖默认当前今天今时</th></tr></thead>
+            <thead><tr><th width="16%">参数名</th><th width="24%">默认值</th><th width="60%">作用</th></tr></thead>
+            <tbody>
+            <tr><td>year</td><td>默认调用当前年</td><td>//年</td></tr>
+            <tr><td>moon</td><td>默认调用当前月</td><td>//月</td></tr>
+            <tr><td>day</td><td>默认调用当前日</td><td>//日</td></tr>
+            <tr><td>hours</td><td>默认调用当前时</td><td>//时</td></tr>
+            <tr><td>minutes</td><td>默认调用当前分</td><td>//分</td></tr>
+            <tr><td>seconds</td><td>默认调用当前秒</td><td>//秒</td></tr>
+            </tbody>
+            </table>
+            
+            <table class="table table-condensed table-bordered">
+            <thead><tr><th colspan="3">过去日子选择限制（目前只支持日期年月日，不支持单年月或者单时分秒以及年月日时分秒）</th></tr></thead>
+            <thead><tr><th width="16%">参数名</th><th width="24%">默认值</th><th width="60%">作用</th></tr></thead>
+            <tbody>
+            <tr><td>oldday_set</td><td>/</td><td>//限制josn</td></tr>
+            <tr><td>oldday_set.isset</td><td>false</td><td>//是否设置限制</td></tr>
+            <tr><td>oldday_set.setdate</td><td>"today"</td><td>//setdate为设置什么日期或者时刻为新旧日期转折，<br/>默认为today就是今天会自动转化为今天日期，<br/>只支持格式为yyyy-mm-dd</td></tr>
+            </tbody>
+            </table>
+            
+            <table class="table table-condensed table-bordered">
+            <thead><tr><th colspan="3">机制判断</th></tr></thead>
+            <thead><tr><th width="16%">参数名</th><th width="24%">默认值</th><th width="60%">作用</th></tr></thead>
+            <tbody>
+            <tr><td>isinput</td><td>false</td><td>//是否从输入框里的时间来做初始值</td></tr>
+            <tr><td>isdistshowdate</td><td>false</td><td>//是否一开始就在输入框里显示初始化日期</td></tr>
+            <tr><td>isshowym</td><td>true</td><td>//是否显示年月,不能出现年月不显示而显示日数，就是isshowym为false的时候isshowday一定得false（自动会换）</td></tr>
+            <tr><td>isshowday</td><td>true</td><td>//是否显示日数选择 只有在isshowym为true时才能有作用</td></tr>
+            <tr><td>isshowtime</td><td>false</td><td>//是否显示时分秒////不能在不显示天数的情况下，同时显示年月选择和时间选择</td></tr>
+            </tbody>
+            </table>
+            <table class="table table-condensed table-bordered">
+            <thead><tr><th colspan="3">函数回调</th></tr></thead>
+            <thead><tr><th width="16%">参数名</th><th width="24%">默认值</th><th width="60%">作用</th></tr></thead>
+            <tbody>
+            <tr><td>clickday</td><td>默认给回调到给输入框传日历插件里选到的日期数据</td><td>//日数点击时执行</td></tr>
+            <tr><td>choosetimes</td><td>默认给回调到给输入框传日历插件里选到的日期数据</td><td>//时分秒转换时执行</td></tr>
+            
+            </tbody>
+            </table>	
+            </div>
             
         </div>
         
@@ -762,12 +854,17 @@
 		 }); 
 		 
 		 //日历调用(多个日期同时使用时，每配置一个参数，其他日期调用也需要重新初始化此参数)
-		qkycal.qkycalendar({boxid:".qkycalendar_box.default",isshowtime:false,isdistshowdate:true,isinput:false});
-		qkycal.qkycalendar({boxid:".qkycalendar_box.box_hms",isshowtime:"hms",isdistshowdate:false,isinput:false});
-	    qkycal.qkycalendar({boxid:".qkycalendar_box.box_hm",isshowtime:"hm",isdistshowdate:false,isinput:false});
-		qkycal.qkycalendar({boxid:".qkycalendar_box.dist",isshowtime:false,isdistshowdate:true,isinput:true});
+		qkycal.qkycalendar({boxid:".qkycalendar_box.default"});
+		qkycal.qkycalendar({boxid:".qkycalendar_box.box_hms",isshowtime:"hms"});
+	    qkycal.qkycalendar({boxid:".qkycalendar_box.box_hm",isshowtime:"hm"});
+		qkycal.qkycalendar({boxid:".qkycalendar_box.dist",isdistshowdate:true,isinput:true});
 	    qkycal.qkycalendar({boxid:".qkycalendar_box.dist_hms",isshowtime:"hms",isdistshowdate:true,isinput:true});
 		qkycal.qkycalendar({boxid:".qkycalendar_box.dist_hm",isshowtime:"hm",isdistshowdate:true,isinput:true});
+		qkycal.qkycalendar({boxid:".qkycalendar_box.only_hms",isshowtime:"hms",isshowym:false});
+		qkycal.qkycalendar({boxid:".qkycalendar_box.only_hm",isshowtime:"hm",isshowym:false});
+		qkycal.qkycalendar({boxid:".qkycalendar_box.only_ym",isshowday:false});
+		qkycal.qkycalendar({boxid:".qkycalendar_box.oldday_none",oldday_set:{isset:true,setdate:"today"}});
+		
 		 
 		
 		
