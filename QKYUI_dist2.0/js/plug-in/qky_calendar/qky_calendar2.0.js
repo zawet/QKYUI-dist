@@ -15,7 +15,7 @@ define(function(require,exports) {
 						ajaxsrc:"js/plug-in/qky_calendar/qky_calendar2.0.html",//异步地址
 						csssrc:"js/plug-in/qky_calendar/qky_calendar2.0.css",//css调用地址//为之后的主题更换留接口
 						//在哪里展出,默认右下（css直接锁定了）展出，值："po_leftup（左上）,po_leftdown（左下）,po_rightup（右上）" 可以另加内外边距的快速css，比如"po_leftup,ml15",用，号分割;
-						position:"po_leftup,ml15",
+						position:"po_leftup",
 						boxid:".qkycalendar_box",//日历盒子id或者class
 						drawid:".qkycalendar",//日历渲染id或者class
 						cilckid:".qkycalendar_btn",//日历点击id或者class

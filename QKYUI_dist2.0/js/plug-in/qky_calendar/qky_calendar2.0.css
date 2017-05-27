@@ -2,11 +2,9 @@
 /* CSS Document */
 
 /*自主日历插件*/
-.qkycalendar_box{ position:relative;}
-.qkycalendar_box a.qkycalendar_btn{ color:#333;}
-.qkycalendar_box a.qkycalendar_btn.active{ background:#fff; text-decoration:inherit; color:#2baf2b;}
-.qkycalendar_box input.qkycalendar_btn{ background:#fff; padding-right:30px;}
-.qkycalendar_box:after{ position: absolute; top:0; right:0; width:30px; margin-right:15px; content:"\e609";font-family:"qkyicon_20" !important;font-size:16px;font-style:normal;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; line-height:30px; text-align:center; color:#535353;}
+.qkycalendar_box{ position:relative; background:#fff;border-radius: 4px;}
+.qkycalendar_box input.qkycalendar_btn{ background:none; padding-right:30px; position:relative; z-index:2;}
+.qkycalendar_box:after{ position: absolute; top:0; right:0; width:30px; content:"\e609";font-family:"qkyicon_20" !important;font-size:16px;font-style:normal;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; line-height:30px; text-align:center; color:#535353;}
 .qkycalendar_box.only_hms:after,.qkycalendar_box.only_hm:after{content:"\e640";font-family:"qkyicon_mian" !important;}
 
 
