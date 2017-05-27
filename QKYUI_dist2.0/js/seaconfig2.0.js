@@ -15,6 +15,7 @@ seajs.config({
 	/**模块或者组件模块**/
 	'rach':'common_cadr/radio_checkbox1.2',
 	'dw':'common_cadr/dropdown_havevalue',
+	'steps':'common_cadr/steps',
 	'upfile':'common_cadr/file',
 
 	/****插件***/
@@ -34,6 +35,9 @@ seajs.config({
 	'com_c':'./js/common_cadr',//公用模块js存放路径
 	'com_d':'./js/common_default',//公用模块js存放路径
 	
+	/****项目模块js路径***/
+	
+	
   },
 
   // 变量配置
@@ -41,6 +45,19 @@ seajs.config({
     'locale': 'zh-cn'
   }
 });
+
+var opt={
+	navli_j:[
+			{name:"我的工资条",attrcont:"href='index.html'",isactive:false},
+			{name:"工资管理",attrcont:"href='index_wage_manag.html'",isactive:false},
+			{name:"工资模板管理",attrcont:"href='index_wagemould_manag.html'",isactive:false},
+			{name:"工资统计查询",attrcont:"href='index_count.html'",isactive:false},
+	]
+}
+
+for(var i=0;i<opt.navli_j.length;i++){
+	opt.navli_j[i].isactive=false;
+}
 
 //二级文件夹页面头部的改变设置
  var second_opts={

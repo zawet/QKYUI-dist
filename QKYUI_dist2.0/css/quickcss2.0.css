@@ -17,19 +17,24 @@
 .box_b{ box-sizing:border-box;}/*块元素浮动算宽度时，忽略边框和内边距*/
 .dian3{ overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}/*单行文字超出显示...*/
 .ycfile{position: absolute;width: 100%;height: 100%;left: 0;top: 0;filter: alpha(opacity=0);opacity: 0;z-index: 66;cursor: pointer;}/*完全透明的上传控件*/
-.r90{transform:rotate(-90deg); -webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);}/*旋转90度  ie8以及以下没作用*/
+.r90{transform:rotate(90deg); -webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);}/*旋转90度  ie8以及以下没作用*/
 .r180{transform:rotate(-180deg); -webkit-transform:rotate(-180deg);-moz-transform:rotate(-180deg); display:inline-block;}
 .r180,.r90,.trn{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}/*过度执行动画  ie8以及以下没作用*/
 .height30{ height:30px; padding:4px 15px;}
 .height30_line{ height:30px; line-height:30px;}
 .height34{ height:34px; padding:6px 15px;}
 .height34_line{ height:34px; line-height:34px;}
+.lh22{ line-height:22px;}
+.lh26{ line-height:26px;}
+.lh30{ line-height:30px;}
 .t_c{ text-align:center !important;}
 .t_l{ text-align:left !important;}
 .t_r{ text-align:right !important;}
 .bor_nb{ border-bottom:none !important;}
 .bor_nt{ border-top:none !important;}
 .atd a:hover,.atd:hover{ text-decoration:inherit; cursor:pointer;}
+.wd50{width:50%;}
+.wd80{width:80%;}
 .wd100{ width:100%;}
 
 .co_a3{ color:#a3a3a3!important;}
@@ -90,6 +95,7 @@
 .ma10{ margin:10px!important;}
 .ma15{ margin:15px!important;}
 .ma20{ margin:20px!important;}
+.mauto{ margin-left:auto!important;margin-right:auto!important;}
 
 
 .pt0{ padding-top:0px!important;}
