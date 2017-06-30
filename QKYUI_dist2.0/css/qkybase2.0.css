@@ -377,7 +377,8 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .slider-wrappers input[type=range]::-webkit-slider-thumb {-webkit-appearance: none; background:#27b0f2;width:10px;height:10px;border-radius:100%;}  
  
  /*切换身份|密码重置*/
- .switch_box{ position:absolute; top:0; left:0; width:100%; min-height:100%; z-index:22; background:url(../images/switch_bg.png) no-repeat 50% 50%; background-size:100% 100%; padding:50px 0;}
+ .switch_box{ position:absolute; top:0; left:0; width:100%; min-height:100%; z-index:22;  padding:50px 0;}
+ .switch_box  .switch_box_bg{background:url(../images/switch_bg.png) no-repeat 50% 0;  background-size: cover; position: fixed; left:0; top:0; width:100%; height:100%;}
  .switch_box .col-sm-6{padding:0  20px;}
  .swith_list{ background:#fff; box-shadow:0 0 22px 0 rgba(86,177,175,0.59);border-radius:5px; display:block; width:100%; padding:40px 30px; cursor:pointer; margin-bottom:40px;}
  .swith_list{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}
